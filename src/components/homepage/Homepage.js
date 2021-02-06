@@ -5,6 +5,11 @@ import "./Homepage.css"
 import Navbar from "../navbar/Navbar";
 
 import headerImage from "../../images/Group 3.svg";
+import manGoingUp from "../../images/man-waving.svg";
+import manWaving from "../../images/man-going-up.svg";
+import user1 from "../../images/user1.svg";
+import user2 from "../../images/user2.svg";
+import user3 from "../../images/user3.svg";
 
 function Homepage() {
   return (
@@ -16,7 +21,36 @@ function Homepage() {
   <h1></h1></div>
    
       </header>
+      <section className="testimonials">
+        <h1>O que quem já foi contratado diz</h1>
+        <p>Entenda como o processo ajudou centenas de profissionais a se colocarem no mercado.</p>
+        <div className="testimonial">
+          <p>“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</p>
+          <div className="testimonial-user">
+              <img src={user1} />
+              <div className="testimonial-user-identification">
+                  <p><b>Henk Fortuin</b></p>
+                  <p>Founder of Crips</p>
+              </div>
+          </div>
+          <div className="testimonial-user">
+              <img src={user2} />
+              <div className="testimonial-user-identification">
+                  <p><b>Henk Fortuin</b></p>
+                  <p>Founder of Crips</p>
+              </div>
+          </div>
+          <div className="testimonial-user">
+              <img src={user3} />
+              <div className="testimonial-user-identification">
+                  <p><b>Henk Fortuin</b></p>
+                  <p>Founder of Crips</p>
+              </div>
+          </div>
+        </div>
+      </section>
       <section className="faq">
+        <img src={manWaving} />
         <div className="faq-group">
           <div className="question">
             <h3>Qual é o custo para utilizar a plataforma?</h3>
@@ -32,14 +66,13 @@ function Homepage() {
             <h3>Vou receber um certificado?</h3>
           </div>
         </div>
-        <img src={headerImage} />
       </section>
       <section className="call-to-action">
         <div className="action-content">
           <h1>Pronto para se destacar no recrutamento e entrar no mercado?</h1>
           <a href="https://contrate-me.vercel.app/" alt="Testar" className="home-btn">Provar meu conhecimento</a>
         </div>
-        <img src={headerImage} />
+        <img src={manGoingUp} />
       </section>
       <footer>
         <img src={headerImage} />
