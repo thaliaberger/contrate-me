@@ -316,32 +316,25 @@ footer h3 {
   margin-left: 0;
 }
 
-footer .menu {
+footer .footer-collumn {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-footer .menu a {
+footer .footer-collumn a{
   font-family: "IBM Plex Mono";
+  margin: 0;
   color: #4f596a;
   text-decoration: none;
-  margin-top: 15px;
-  margin-left: 0;
+  margin-top: 1em;
 }
 
-footer .support {
+footer .social-media{
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
-footer .support a {
-  font-family: "IBM Plex Mono";
-  color: #4f596a;
-  text-decoration: none;
-  margin-top: 15px;
-  margin-left: 0;
-}
 footer .social-media img {
   margin-left: 20px;
   margin-top: 60px;
