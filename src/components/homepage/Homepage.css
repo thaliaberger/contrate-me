@@ -83,3 +83,15 @@ h2 {
   font-family: "IBM Plex Mono";
   color: #4f596a;
 }
+.home-btn {
+  color: white;
+  background: linear-gradient(44.11deg, #cd10ff 15.75%, #9f06ff 84.63%);
+  padding: 24px;
+  border-radius: 33px;
+  width: 256px;
+  height: 52px;
+}
+
+.home-btn:hover {
+  background: linear-gradient(44.11deg, #9f06ff 15.75%, #cd10ff 84.63%);
+}
