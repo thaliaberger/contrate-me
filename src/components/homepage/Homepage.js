@@ -5,8 +5,8 @@ import "./Homepage.css";
 import Navbar from "../navbar/Navbar";
 
 import headerImage from "../../images/Group 3.svg";
-import manGoingUp from "../../images/man-waving.svg";
-import manWaving from "../../images/man-going-up.svg";
+import manWaving from "../../images/man-waving.svg";
+import manGoingUp from "../../images/man-going-up.svg";
 import user1 from "../../images/user1.svg";
 import user2 from "../../images/user2.svg";
 import user3 from "../../images/user3.svg";

@@ -90,6 +90,8 @@ h2 {
   border-radius: 33px;
   width: 256px;
   height: 52px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .home-btn:hover {
@@ -107,6 +109,7 @@ h2 {
 .testimonials-section h1{
   font-size: 46px;
   max-width: 460px;
+  color: white;
 }
 
 .testimonials-section .testimonials-subtitle{
@@ -145,4 +148,16 @@ h2 {
 
 .testimonial .testimonial-user .testimonial-user-identification{
   margin-left: 1em;
+}
+
+.call-to-action{
+ display: flex; 
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+}
+
+.call-to-action h1{
+  font-size: 46px;
+  margin-bottom: 1em;
 }
