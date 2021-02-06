@@ -17,3 +17,54 @@
 .home-btn:hover {
   background: linear-gradient(44.11deg, #9f06ff 15.75%, #cd10ff 84.63%);
 }
+
+.testimonials-section{
+  background: linear-gradient(44.11deg, #CD10FF 15.75%, #CD10FF 15.76%, #9F06FF 84.63%);
+  opacity: 0.75;
+  text-align: center;
+  color: white;
+  padding: 5em 0;
+}
+
+.testimonials-section h1{
+  font-size: 46px;
+  max-width: 460px;
+}
+
+.testimonials-section .testimonials-subtitle{
+  font-size: 20px;
+  opacity: 0.8;
+  margin-top: 2em;
+  max-width: 560px;
+}
+
+.testimonials-section .testimonials{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3em;
+}
+
+.testimonials-section .testimonials .testimonial{
+  background: rgba(76, 0, 112, 0.195968);
+  border-radius: 20px;
+  width: 30em;
+  margin-top: 1em;
+  padding: 2em;
+}
+
+.testimonials-section .testimonials .testimonial .testimonial-user{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+  text-align: left;
+}
+
+.testimonial .testimonial-user img{
+  margin-right: 0;
+}
+
+.testimonial .testimonial-user .testimonial-user-identification{
+  margin-left: 1em;
+}

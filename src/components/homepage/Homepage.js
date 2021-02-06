@@ -21,31 +21,39 @@ function Homepage() {
   <h1></h1></div>
    
       </header>
-      <section className="testimonials">
+      <section className="testimonials-section">
         <h1>O que quem já foi contratado diz</h1>
-        <p>Entenda como o processo ajudou centenas de profissionais a se colocarem no mercado.</p>
-        <div className="testimonial">
-          <p>“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</p>
-          <div className="testimonial-user">
-              <img src={user1} />
-              <div className="testimonial-user-identification">
-                  <p><b>Henk Fortuin</b></p>
-                  <p>Founder of Crips</p>
-              </div>
+        <p className="testimonials-subtitle">Entenda como o processo ajudou centenas de profissionais a se colocarem no mercado.</p>
+        <div className="testimonials">
+          <div className="testimonial">
+            <p>“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</p>
+            <div className="testimonial-user">
+                <img src={user1} />
+                <div className="testimonial-user-identification">
+                    <p><b>Henk Fortuin</b></p>
+                    <p>Founder of Crips</p>
+                </div>
+            </div>
           </div>
-          <div className="testimonial-user">
-              <img src={user2} />
-              <div className="testimonial-user-identification">
-                  <p><b>Henk Fortuin</b></p>
-                  <p>Founder of Crips</p>
-              </div>
+          <div className="testimonial">
+            <p>“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</p>
+            <div className="testimonial-user">
+                <img src={user2} />
+                <div className="testimonial-user-identification">
+                    <p><b>Henk Fortuin</b></p>
+                    <p>Founder of Crips</p>
+                </div>
+            </div>
           </div>
-          <div className="testimonial-user">
-              <img src={user3} />
-              <div className="testimonial-user-identification">
-                  <p><b>Henk Fortuin</b></p>
-                  <p>Founder of Crips</p>
-              </div>
+          <div className="testimonial">
+            <p>“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</p>
+            <div className="testimonial-user">
+                <img src={user3} />
+                <div className="testimonial-user-identification">
+                    <p><b>Henk Fortuin</b></p>
+                    <p>Founder of Crips</p>
+                </div>
+            </div>
           </div>
         </div>
       </section>
