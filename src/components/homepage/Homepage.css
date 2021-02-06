@@ -167,14 +167,30 @@ footer{
   padding: 3em 2em;
   display: flex;
   flex-wrap: wrap;
+  text-align: left;
 }
 
-footer .menu{
+footer a{
+  text-decoration: none;
+  color: #4F596A;
+}
+
+footer h3{
+  margin: 0;
+}
+
+footer .footer-collumn{
   display: flex;
   flex-direction: column;
 }
 
-footer .support{
-  display: flex;
-  flex-direction: column;
+footer .footer-collumn a{
+  margin: 0;
+  margin-top: 1em;
 }
+
+footer .social-media{
+  display: flex;
+  align-items: center;
+}
+

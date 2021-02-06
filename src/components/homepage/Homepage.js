@@ -166,7 +166,7 @@ function Homepage() {
       </section>
       <footer>
         <img src={logo} />
-        <div className="menu">
+        <div className="footer-collumn">
           <h3>Menu</h3>
           <a href="https://contrate-me.vercel.app/" alt="Como funciona">
             Como funciona
@@ -181,7 +181,7 @@ function Homepage() {
             Entrar
           </a>
         </div>
-        <div className="support">
+        <div className="footer-collumn">
           <h3>Suporte</h3>
           <a href="https://contrate-me.vercel.app/" alt="Email">
             contato@mecontrate.com
