@@ -3,7 +3,7 @@
 .header-container {
   width: 100%;
   height: 900px;
-  /* background-image: url("../../images/Blob.svg"); */
+  background-image: url("../../images/Blob.svg");
   background-position: 100% 40%;
   background-size: 1000px;
   background-repeat: no-repeat;
@@ -73,6 +73,10 @@ h2 {
   height: 172px;
 }
 
+.numbers-section div {
+  width: 200px;
+}
+
 .numbers-section h4 {
   font-size: 40px;
   color: #001a49;
@@ -94,4 +98,117 @@ h2 {
 
 .home-btn:hover {
   background: linear-gradient(44.11deg, #9f06ff 15.75%, #cd10ff 84.63%);
+}
+
+/* SERVICES SECTION */
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-card {
+  display: flex;
+  width: 1120px;
+  height: 172px;
+  background: linear-gradient(44.11deg, #fdf4ff 15.75%, #faf3ff 84.63%);
+  border-radius: 21px;
+  margin-top: 32px;
+  align-items: center;
+}
+
+.services-card-text {
+  width: 900px;
+  margin-left: 0;
+}
+
+.services-card-text h6 {
+  color: #001a49;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.services-card-text p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.services-section-header {
+  text-align: center;
+  width: 930px;
+  margin-top: 128px;
+  margin-bottom: 50px;
+}
+
+.services-section-header h5 {
+  font-size: 46px;
+  line-height: 56px;
+  margin-bottom: 24px;
+}
+
+.services-section-header p {
+  font-family: "IBM Plex Mono";
+  color: #4f596a;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: start;
+  margin-top: 30px;
+}
+
+/* PARTNERS SECTION */
+
+.partners-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.partners-section-logos {
+  background: linear-gradient(44.11deg, #f3c3ff 15.75%, #e7c1ff 84.63%);
+  height: 270px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-section-logos img {
+  margin: 20px;
+}
+
+.logo-provi {
+  margin-top: 200px;
+  margin-bottom: 32px;
+}
+
+/* POTENTIAL SECTION */
+
+.potential-section {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 50px 100px 50px;
+}
+
+.potential-section h5 {
+  color: #001a49;
+  font-size: 46px;
+  line-height: 56px;
+  width: 700px;
+  text-align: start;
+  margin-bottom: 32px;
+}
+
+.potential-section p {
+  font-family: "IBM Plex Mono";
+  color: #4f596a;
+  width: 560px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: start;
+  margin-left: 0;
 }

@@ -11,6 +11,7 @@
 .logo-name {
   font-family: "IBM Plex Mono";
   font-size: 24px;
+  color: black;
 }
 
 .logo-div {
@@ -23,7 +24,7 @@
 }
 
 .links-div p {
-  margin-right: 20px;
+  margin-right: 40px;
   cursor: pointer;
 }
 
