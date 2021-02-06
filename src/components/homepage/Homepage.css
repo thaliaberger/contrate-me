@@ -1,6 +1,85 @@
-.header {
-  background-image: url("../../images/Blob.svg");
-  background-position: 0 0;
-  background-size: contain;
+/* HEADER */
+
+.header-container {
+  width: 100%;
+  height: 900px;
+  /* background-image: url("../../images/Blob.svg"); */
+  background-position: 100% 40%;
+  background-size: 1000px;
   background-repeat: no-repeat;
+}
+
+.header-content {
+  margin: 100px 0 0 0;
+  display: flex;
+}
+
+.header-image {
+  height: 496px;
+  width: 503px;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 58px;
+  color: #001a49;
+  width: 581px;
+  line-height: 68px;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "IBM Plex Mono";
+  color: #4f596a;
+  width: 549px;
+  line-height: 30px;
+  margin: 48px 0;
+}
+
+.header-info p {
+  font-family: "IBM Plex Mono";
+  margin-top: 63px;
+}
+.header-btn {
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(44.11deg, #cd10ff 15.75%, #9f06ff 84.63%);
+  padding: 24px;
+  border-radius: 33px;
+  width: 328px;
+  height: 72px;
+  font-size: 20px;
+  margin: 0 0;
+}
+
+.header-btn:hover {
+  background: linear-gradient(44.11deg, #9f06ff 15.75%, #cd10ff 84.63%);
+}
+
+/* NUMBERS SECTION */
+
+.numbers-section {
+  display: flex;
+  border: 1px solid #e7eaeb;
+  border-radius: 21px;
+  text-align: center;
+  margin: 0 160px;
+  padding: 50px;
+  height: 172px;
+}
+
+.numbers-section h4 {
+  font-size: 40px;
+  color: #001a49;
+}
+
+.numbers-section p {
+  font-size: 16px;
+  font-family: "IBM Plex Mono";
+  color: #4f596a;
 }

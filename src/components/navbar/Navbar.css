@@ -1,7 +1,6 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  height: 50px;
   align-items: center;
   font-size: 16px;
   font-weight: bold;
@@ -11,7 +10,6 @@
 
 .logo-name {
   font-family: "IBM Plex Mono";
-
   font-size: 24px;
 }
 
