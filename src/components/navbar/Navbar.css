@@ -1,0 +1,57 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #001a49;
+  margin-top: 25px;
+}
+
+.logo-name {
+  font-family: "IBM Plex Mono";
+
+  font-size: 24px;
+}
+
+.logo-div {
+  display: flex;
+}
+
+.links-div {
+  display: flex;
+  cursor: pointer;
+}
+
+.links-div p {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.navbar p:hover,
+a:hover {
+  opacity: 75%;
+}
+
+.login-div a {
+  text-decoration: none;
+}
+
+.navbar-entrar {
+  color: #001a49;
+  margin-right: 20px;
+}
+
+.navbar-btn {
+  color: white;
+  background: linear-gradient(44.11deg, #cd10ff 15.75%, #9f06ff 84.63%);
+  padding: 16px;
+  border-radius: 33px;
+  width: 256px;
+  height: 52px;
+}
+
+.navbar-btn:hover {
+  background: linear-gradient(44.11deg, #9f06ff 15.75%, #cd10ff 84.63%);
+}
