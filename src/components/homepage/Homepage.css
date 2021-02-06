@@ -3,7 +3,7 @@
 .header-container {
   width: 100%;
   height: 900px;
-  /* background-image: url("../../images/Blob.svg"); */
+  background-image: url("../../images/Blob.svg");
   background-position: 100% 40%;
   background-size: 1000px;
   background-repeat: no-repeat;
@@ -15,6 +15,7 @@
 }
 
 .header-image {
+  margin-top: 150px;
   height: 496px;
   width: 503px;
 }
@@ -26,6 +27,7 @@
 }
 
 h1 {
+  margin-top: 150px;
   font-size: 58px;
   color: #001a49;
   width: 581px;
@@ -41,12 +43,26 @@ h2 {
   margin: 48px 0;
 }
 
-.header-info p {
-  font-family: "IBM Plex Mono";
-  margin-top: 63px;
+.header-avatars-div {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 0;
 }
+
+.header-avatars-div p {
+  font-family: "IBM Plex Mono";
+  margin-left: 10px;
+}
+
+.header-info strong {
+  color: #c60eff;
+  font-weight: 100;
+}
+
 .header-btn {
   color: white;
+  font-weight: bold;
   text-decoration: none;
   background: linear-gradient(44.11deg, #cd10ff 15.75%, #9f06ff 84.63%);
   padding: 24px;
@@ -71,6 +87,10 @@ h2 {
   margin: 0 160px;
   padding: 50px;
   height: 172px;
+}
+
+.numbers-section div {
+  width: 200px;
 }
 
 .numbers-section h4 {
@@ -98,35 +118,155 @@ h2 {
   background: linear-gradient(44.11deg, #9f06ff 15.75%, #cd10ff 84.63%);
 }
 
-.testimonials-section{
-  background: linear-gradient(44.11deg, #CD10FF 15.75%, #CD10FF 15.76%, #9F06FF 84.63%);
+/* SERVICES SECTION */
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-card {
+  display: flex;
+  width: 1120px;
+  height: 172px;
+  background: linear-gradient(44.11deg, #fdf4ff 15.75%, #faf3ff 84.63%);
+  border-radius: 21px;
+  margin-top: 32px;
+  align-items: center;
+}
+
+.services-card-text {
+  width: 900px;
+  margin-left: 0;
+}
+
+.services-card-text h6 {
+  color: #001a49;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.services-card-text p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.services-section-header {
+  text-align: center;
+  width: 930px;
+  margin-top: 128px;
+  margin-bottom: 50px;
+}
+
+.services-section-header h5 {
+  font-size: 46px;
+  line-height: 56px;
+  margin-bottom: 24px;
+}
+
+.services-section-header p {
+  font-family: "IBM Plex Mono";
+  color: #4f596a;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: start;
+  margin-top: 30px;
+}
+
+/* PARTNERS SECTION */
+
+.partners-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.partners-section-logos {
+  background: linear-gradient(44.11deg, #f3c3ff 15.75%, #e7c1ff 84.63%);
+  height: 270px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-section-logos img {
+  margin: 20px;
+}
+
+.logo-provi {
+  margin-top: 200px;
+  margin-bottom: 32px;
+}
+
+/* POTENTIAL SECTION */
+
+.potential-section {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 50px 100px 50px;
+}
+
+.potential-section h5 {
+  color: #001a49;
+  font-size: 46px;
+  line-height: 56px;
+  width: 700px;
+  text-align: start;
+  margin-bottom: 32px;
+}
+
+.potential-section p {
+  font-family: "IBM Plex Mono";
+  color: #4f596a;
+  width: 560px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: start;
+  margin-left: 0;
+}
+
+/* TESTIMONIALS */
+
+.testimonials-section {
+  background: linear-gradient(
+    44.11deg,
+    #cd10ff 15.75%,
+    #cd10ff 15.76%,
+    #9f06ff 84.63%
+  );
   opacity: 0.75;
   text-align: center;
   color: white;
   padding: 5em 0;
 }
 
-.testimonials-section h1{
+.testimonials-section h1 {
   font-size: 46px;
   max-width: 460px;
   color: white;
 }
 
-.testimonials-section .testimonials-subtitle{
+.testimonials-section .testimonials-subtitle {
   font-size: 20px;
   opacity: 0.8;
   margin-top: 2em;
   max-width: 560px;
 }
 
-.testimonials-section .testimonials{
+.testimonials-section .testimonials {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 3em;
 }
 
-.testimonials-section .testimonials .testimonial{
+.testimonials-section .testimonials .testimonial {
   background: rgba(76, 0, 112, 0.195968);
   border-radius: 20px;
   width: 30em;
@@ -134,7 +274,7 @@ h2 {
   padding: 2em;
 }
 
-.testimonials-section .testimonials .testimonial .testimonial-user{
+.testimonials-section .testimonials .testimonial .testimonial-user {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,50 +282,51 @@ h2 {
   text-align: left;
 }
 
-.testimonial .testimonial-user img{
+.testimonial .testimonial-user img {
   margin-right: 0;
 }
 
-.testimonial .testimonial-user .testimonial-user-identification{
+.testimonial .testimonial-user .testimonial-user-identification {
   margin-left: 1em;
 }
 
-.call-to-action{
- display: flex; 
- flex-wrap: wrap;
- align-items: center;
- justify-content: center;
+.call-to-action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.call-to-action h1{
+.call-to-action h1 {
   font-size: 46px;
   margin-bottom: 1em;
 }
 
-footer{
+/* FOOTER */
+
+footer {
   background: #fcf3ff;
   padding: 3em 2em;
   display: flex;
   flex-wrap: wrap;
-  text-align: left;
+  margin-top: 50px;
 }
 
-footer a{
-  text-decoration: none;
-  color: #4F596A;
+footer h3 {
+  margin-left: 0;
 }
 
-footer h3{
-  margin: 0;
-}
-
-footer .footer-collumn{
+footer .footer-collumn {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 footer .footer-collumn a{
+  font-family: "IBM Plex Mono";
   margin: 0;
+  color: #4f596a;
+  text-decoration: none;
   margin-top: 1em;
 }
 
@@ -194,3 +335,7 @@ footer .social-media{
   align-items: center;
 }
 
+footer .social-media img {
+  margin-left: 20px;
+  margin-top: 60px;
+}

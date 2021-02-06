@@ -5,6 +5,14 @@ import "./Homepage.css";
 import Navbar from "../navbar/Navbar";
 
 import headerImage from "../../images/Group 3.svg";
+import triangulo1 from "../../images/triangulo roxo.svg";
+import triangulo2 from "../../images/triangulo amarelo.svg";
+import triangulo3 from "../../images/triangulo azul.svg";
+import provi from "../../images/Group 19 1.png";
+import partners1 from "../../images/Frame 21.svg";
+import partners2 from "../../images/Frame 20.svg";
+import potentialImage from "../../images/Frame 7.svg";
+import rectangle from "../../images/Rectangle.svg";
 import manWaving from "../../images/man-waving.svg";
 import manGoingUp from "../../images/man-going-up.svg";
 import user1 from "../../images/user1.svg";
@@ -13,6 +21,7 @@ import user3 from "../../images/user3.svg";
 import logo from "../../images/logo.svg";
 import linkedin from "../../images/linkedin.svg";
 import instagram from "../../images/instagram.svg";
+import avatars from "../../images/fotinhas.svg";
 
 function Homepage() {
   return (
@@ -32,98 +41,180 @@ function Homepage() {
             <Link className="header-btn" to="/">
               Provar meu conhecimento
             </Link>
-            <p>Junte-se a 300+ profissionais contratados</p>
+            <div className="header-avatars-div">
+              <img src={avatars} />
+              <p>
+                Junte-se a <strong>300+</strong> profissionais contratados
+              </p>
+            </div>
           </div>
         </div>
-      </header>    
+      </header>
+
+      {/* NUMBERS */}
+
       <section className="numbers-section">
         <div>
           <h4>54</h4>
           <p>empresas parceiras</p>
         </div>
+        <img src={rectangle} />
         <div>
           <h4>300+</h4>
           <p>profissionais contratados</p>
         </div>
+        <img src={rectangle} />
+
         <div>
           <h4>733</h4>
           <p>testes técnicos submetidos</p>
         </div>
       </section>
 
-      <section>
-        <div>
+      {/* SERVICES */}
+
+      <section className="services-section">
+        <div className="services-section-header">
           <h5>O que você vai encontrar?</h5>
           <p>
-            Saiba como você vai ser notado pelas empresas e se detacar
-            completando os requisitos.
+            Saiba como você vai ser notado pelo seu trabalho dos sonhos antes
+            mesmo de entrar no processo seletivo. Com a contrate.me, você tem
+            acesso aos testes técnicos que as melhores empresas de tecnologia
+            estão pedindo.
+          </p>
+          <p>
+            Além disso, você tem liberdade de se dedicar em um momento que for
+            melhor para você, e completar quantos testes conseguir para entrar
+            no ranking da semana e se destacar!
           </p>
         </div>
 
-        <div>
-          <img src="" />
-          <div>
-            <h6></h6>
-            <p></p>
+        <div className="services-card">
+          <img src={triangulo1} />
+          <div className="services-card-text">
+            <h6>Testes técnicos solicitados pelas empresas</h6>
+            <p>
+              Explore diferentes linguagens e dê o seu melhor em testes que as
+              empresas querem ver!
+            </p>
           </div>
         </div>
 
-        <div>
-          <img src="" />
-          <div>
-            <h6></h6>
-            <p></p>
+        <div className="services-card">
+          <img src={triangulo2} />
+          <div className="services-card-text">
+            <h6>Se destaque e esteja entre os primeiros doo ranking</h6>
+            <p>
+              Linkedin, Github, portfólio pessoal, CV, todas informações ao seu
+              dispor
+            </p>
           </div>
         </div>
 
-        <div>
-          <img src="" />
-          <div>
-            <h6></h6>
-            <p></p>
+        <div className="services-card">
+          <img src={triangulo3} />
+          <div className="services-card-text">
+            <h6>Tenha seu portfólio notado </h6>
+            <p>
+              Suba até 03 projetos individuais, e compartilhe mais dos seu
+              conhecimento.
+            </p>
           </div>
         </div>
 
-        <div>
-          <img src="" />
-          <div>
-            <h6></h6>
-            <p></p>
+        <div className="services-card">
+          <img src={triangulo1} />
+          <div className="services-card-text">
+            <h6>Destaque seus links externos</h6>
+            <p>
+              Linkedin, Github, portfólio pessoal, CV... Quanto mais, melhor!
+            </p>
           </div>
         </div>
       </section>
+
+      {/* PARTNERS */}
+
+      <section className="partners-section">
+        <img className="logo-provi" src={provi} />
+        <div className="partners-section-logos">
+          <img src={partners1} />
+          <img src={partners2} />
+        </div>
+      </section>
+
+      {/* POTENTIAL */}
+
+      <section className="potential-section">
+        <div>
+          <h5>
+            Seja notado pelo seu potencial e não somente pelo seu currículo
+          </h5>
+          <p>
+            Faça com que a sua porta de entrada nas empresas seja o seu código!
+            Conquiste a sua sonhada vaga mostrando o seu potencial para
+            profissionais responsáveis pela contratação.
+          </p>
+        </div>
+        <img src={potentialImage} />
+      </section>
+
       <section className="testimonials-section">
         <h1>O que quem já foi contratado diz</h1>
-        <p className="testimonials-subtitle">Entenda como o processo ajudou centenas de profissionais a se colocarem no mercado.</p>
+        <p className="testimonials-subtitle">
+          Entenda como o processo ajudou centenas de profissionais a se
+          colocarem no mercado.
+        </p>
         <div className="testimonials">
           <div className="testimonial">
-            <p>“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</p>
+            <p>
+              “I waited to completely finish the course to rate it. This was my
+              first approach to python, i am an excel and VBA user. The
+              professor has an excellent way to explain it and a lot or order
+              and organization. I really recommend it.”
+            </p>
             <div className="testimonial-user">
-                <img src={user1} />
-                <div className="testimonial-user-identification">
-                    <p><b>Henk Fortuin</b></p>
-                    <p>Founder of Crips</p>
-                </div>
+              <img src={user1} />
+              <div className="testimonial-user-identification">
+                <p>
+                  <b>Henk Fortuin</b>
+                </p>
+                <p>Founder of Crips</p>
+              </div>
             </div>
           </div>
           <div className="testimonial">
-            <p>“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</p>
+            <p>
+              “I waited to completely finish the course to rate it. This was my
+              first approach to python, i am an excel and VBA user. The
+              professor has an excellent way to explain it and a lot or order
+              and organization. I really recommend it.”
+            </p>
             <div className="testimonial-user">
-                <img src={user2} />
-                <div className="testimonial-user-identification">
-                    <p><b>Henk Fortuin</b></p>
-                    <p>Founder of Crips</p>
-                </div>
+              <img src={user2} />
+              <div className="testimonial-user-identification">
+                <p>
+                  <b>Henk Fortuin</b>
+                </p>
+                <p>Founder of Crips</p>
+              </div>
             </div>
           </div>
           <div className="testimonial">
-            <p>“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</p>
+            <p>
+              “I waited to completely finish the course to rate it. This was my
+              first approach to python, i am an excel and VBA user. The
+              professor has an excellent way to explain it and a lot or order
+              and organization. I really recommend it.”
+            </p>
             <div className="testimonial-user">
-                <img src={user3} />
-                <div className="testimonial-user-identification">
-                    <p><b>Henk Fortuin</b></p>
-                    <p>Founder of Crips</p>
-                </div>
+              <img src={user3} />
+              <div className="testimonial-user-identification">
+                <p>
+                  <b>Henk Fortuin</b>
+                </p>
+                <p>Founder of Crips</p>
+              </div>
             </div>
           </div>
         </div>
@@ -200,8 +291,12 @@ function Homepage() {
           </a>
         </div>
         <div className="social-media">
-          <a href="https://contrate-me.vercel.app/" alt="Linkedin"><img src={linkedin} /></a>
-          <a href="https://contrate-me.vercel.app/" alt="Instagram"><img src={instagram} /></a>
+          <a href="https://contrate-me.vercel.app/" alt="Linkedin">
+            <img src={linkedin} />
+          </a>
+          <a href="https://contrate-me.vercel.app/" alt="Instagram">
+            <img src={instagram} />
+          </a>
         </div>
       </footer>
     </div>
