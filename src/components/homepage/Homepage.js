@@ -13,6 +13,15 @@ import partners1 from "../../images/Frame 21.svg";
 import partners2 from "../../images/Frame 20.svg";
 import potentialImage from "../../images/Frame 7.svg";
 import rectangle from "../../images/Rectangle.svg";
+import manWaving from "../../images/man-waving.svg";
+import manGoingUp from "../../images/man-going-up.svg";
+import user1 from "../../images/user1.svg";
+import user2 from "../../images/user2.svg";
+import user3 from "../../images/user3.svg";
+import logo from "../../images/logo.svg";
+import linkedin from "../../images/linkedin.svg";
+import instagram from "../../images/instagram.svg";
+import avatars from "../../images/fotinhas.svg";
 
 function Homepage() {
   return (
@@ -32,7 +41,12 @@ function Homepage() {
             <Link className="header-btn" to="/">
               Provar meu conhecimento
             </Link>
-            <p>Junte-se a 300+ profissionais contratados</p>
+            <div className="header-avatars-div">
+              <img src={avatars} />
+              <p>
+                Junte-se a <strong>300+</strong> profissionais contratados
+              </p>
+            </div>
           </div>
         </div>
       </header>
@@ -145,7 +159,68 @@ function Homepage() {
         <img src={potentialImage} />
       </section>
 
+      <section className="testimonials-section">
+        <h1>O que quem já foi contratado diz</h1>
+        <p className="testimonials-subtitle">
+          Entenda como o processo ajudou centenas de profissionais a se
+          colocarem no mercado.
+        </p>
+        <div className="testimonials">
+          <div className="testimonial">
+            <p>
+              “I waited to completely finish the course to rate it. This was my
+              first approach to python, i am an excel and VBA user. The
+              professor has an excellent way to explain it and a lot or order
+              and organization. I really recommend it.”
+            </p>
+            <div className="testimonial-user">
+              <img src={user1} />
+              <div className="testimonial-user-identification">
+                <p>
+                  <b>Henk Fortuin</b>
+                </p>
+                <p>Founder of Crips</p>
+              </div>
+            </div>
+          </div>
+          <div className="testimonial">
+            <p>
+              “I waited to completely finish the course to rate it. This was my
+              first approach to python, i am an excel and VBA user. The
+              professor has an excellent way to explain it and a lot or order
+              and organization. I really recommend it.”
+            </p>
+            <div className="testimonial-user">
+              <img src={user2} />
+              <div className="testimonial-user-identification">
+                <p>
+                  <b>Henk Fortuin</b>
+                </p>
+                <p>Founder of Crips</p>
+              </div>
+            </div>
+          </div>
+          <div className="testimonial">
+            <p>
+              “I waited to completely finish the course to rate it. This was my
+              first approach to python, i am an excel and VBA user. The
+              professor has an excellent way to explain it and a lot or order
+              and organization. I really recommend it.”
+            </p>
+            <div className="testimonial-user">
+              <img src={user3} />
+              <div className="testimonial-user-identification">
+                <p>
+                  <b>Henk Fortuin</b>
+                </p>
+                <p>Founder of Crips</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="faq">
+        <img src={manWaving} />
         <div className="faq-group">
           <div className="question">
             <h3>Qual é o custo para utilizar a plataforma?</h3>
@@ -166,7 +241,6 @@ function Homepage() {
             <h3>Vou receber um certificado?</h3>
           </div>
         </div>
-        <img src={headerImage} />
       </section>
       <section className="call-to-action">
         <div className="action-content">
@@ -179,10 +253,10 @@ function Homepage() {
             Provar meu conhecimento
           </a>
         </div>
-        <img src={headerImage} />
+        <img src={manGoingUp} />
       </section>
       <footer>
-        <img src={headerImage} />
+        <img src={logo} />
         <div className="menu">
           <h3>Menu</h3>
           <a href="https://contrate-me.vercel.app/" alt="Como funciona">
@@ -198,7 +272,7 @@ function Homepage() {
             Entrar
           </a>
         </div>
-        <div className="suporte">
+        <div className="support">
           <h3>Suporte</h3>
           <a href="https://contrate-me.vercel.app/" alt="Email">
             contato@mecontrate.com
@@ -214,6 +288,14 @@ function Homepage() {
           </a>
           <a href="https://contrate-me.vercel.app/" alt="Termos & Condições">
             Termos & Condições
+          </a>
+        </div>
+        <div className="social-media">
+          <a href="https://contrate-me.vercel.app/" alt="Linkedin">
+            <img src={linkedin} />
+          </a>
+          <a href="https://contrate-me.vercel.app/" alt="Instagram">
+            <img src={instagram} />
           </a>
         </div>
       </footer>

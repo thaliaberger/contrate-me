@@ -1,4 +1,7 @@
 .navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -6,12 +9,6 @@
   font-weight: bold;
   color: #001a49;
   margin-top: 25px;
-}
-
-.logo-name {
-  font-family: "IBM Plex Mono";
-  font-size: 24px;
-  color: black;
 }
 
 .logo-div {

@@ -15,6 +15,7 @@
 }
 
 .header-image {
+  margin-top: 150px;
   height: 496px;
   width: 503px;
 }
@@ -26,6 +27,7 @@
 }
 
 h1 {
+  margin-top: 150px;
   font-size: 58px;
   color: #001a49;
   width: 581px;
@@ -41,10 +43,23 @@ h2 {
   margin: 48px 0;
 }
 
-.header-info p {
-  font-family: "IBM Plex Mono";
-  margin-top: 63px;
+.header-avatars-div {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 0;
 }
+
+.header-avatars-div p {
+  font-family: "IBM Plex Mono";
+  margin-left: 10px;
+}
+
+.header-info strong {
+  color: #c60eff;
+  font-weight: 100;
+}
+
 .header-btn {
   color: white;
   text-decoration: none;
@@ -94,6 +109,8 @@ h2 {
   border-radius: 33px;
   width: 256px;
   height: 52px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .home-btn:hover {
@@ -211,4 +228,89 @@ h2 {
   line-height: 30px;
   text-align: start;
   margin-left: 0;
+}
+.testimonials-section {
+  background: linear-gradient(
+    44.11deg,
+    #cd10ff 15.75%,
+    #cd10ff 15.76%,
+    #9f06ff 84.63%
+  );
+  opacity: 0.75;
+  text-align: center;
+  color: white;
+  padding: 5em 0;
+}
+
+.testimonials-section h1 {
+  font-size: 46px;
+  max-width: 460px;
+  color: white;
+}
+
+.testimonials-section .testimonials-subtitle {
+  font-size: 20px;
+  opacity: 0.8;
+  margin-top: 2em;
+  max-width: 560px;
+}
+
+.testimonials-section .testimonials {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3em;
+}
+
+.testimonials-section .testimonials .testimonial {
+  background: rgba(76, 0, 112, 0.195968);
+  border-radius: 20px;
+  width: 30em;
+  margin-top: 1em;
+  padding: 2em;
+}
+
+.testimonials-section .testimonials .testimonial .testimonial-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+  text-align: left;
+}
+
+.testimonial .testimonial-user img {
+  margin-right: 0;
+}
+
+.testimonial .testimonial-user .testimonial-user-identification {
+  margin-left: 1em;
+}
+
+.call-to-action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.call-to-action h1 {
+  font-size: 46px;
+  margin-bottom: 1em;
+}
+
+footer {
+  background: #fcf3ff;
+  padding: 3em 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .support {
+  display: flex;
+  flex-direction: column;
 }
