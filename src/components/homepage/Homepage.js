@@ -10,6 +10,9 @@ import manGoingUp from "../../images/man-going-up.svg";
 import user1 from "../../images/user1.svg";
 import user2 from "../../images/user2.svg";
 import user3 from "../../images/user3.svg";
+import logo from "../../images/logo.svg";
+import linkedin from "../../images/linkedin.svg";
+import instagram from "../../images/instagram.svg";
 
 function Homepage() {
   return (
@@ -162,7 +165,7 @@ function Homepage() {
         <img src={manGoingUp} />
       </section>
       <footer>
-        <img src={headerImage} />
+        <img src={logo} />
         <div className="menu">
           <h3>Menu</h3>
           <a href="https://contrate-me.vercel.app/" alt="Como funciona">
@@ -178,7 +181,7 @@ function Homepage() {
             Entrar
           </a>
         </div>
-        <div className="suporte">
+        <div className="support">
           <h3>Suporte</h3>
           <a href="https://contrate-me.vercel.app/" alt="Email">
             contato@mecontrate.com
@@ -195,6 +198,10 @@ function Homepage() {
           <a href="https://contrate-me.vercel.app/" alt="Termos & Condições">
             Termos & Condições
           </a>
+        </div>
+        <div className="social-media">
+          <a href="https://contrate-me.vercel.app/" alt="Linkedin"><img src={linkedin} /></a>
+          <a href="https://contrate-me.vercel.app/" alt="Instagram"><img src={instagram} /></a>
         </div>
       </footer>
     </div>

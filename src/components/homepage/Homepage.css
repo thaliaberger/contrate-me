@@ -161,3 +161,20 @@ h2 {
   font-size: 46px;
   margin-bottom: 1em;
 }
+
+footer{
+  background: #fcf3ff;
+  padding: 3em 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .menu{
+  display: flex;
+  flex-direction: column;
+}
+
+footer .support{
+  display: flex;
+  flex-direction: column;
+}
