@@ -62,6 +62,7 @@ h2 {
 
 .header-btn {
   color: white;
+  font-weight: bold;
   text-decoration: none;
   background: linear-gradient(44.11deg, #cd10ff 15.75%, #9f06ff 84.63%);
   padding: 24px;
@@ -229,6 +230,9 @@ h2 {
   text-align: start;
   margin-left: 0;
 }
+
+/* TESTIMONIALS */
+
 .testimonials-section {
   background: linear-gradient(
     44.11deg,
@@ -298,19 +302,47 @@ h2 {
   margin-bottom: 1em;
 }
 
+/* FOOTER */
+
 footer {
   background: #fcf3ff;
   padding: 3em 2em;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+footer h3 {
+  margin-left: 0;
 }
 
 footer .menu {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .menu a {
+  font-family: "IBM Plex Mono";
+  color: #4f596a;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-left: 0;
 }
 
 footer .support {
   display: flex;
   flex-direction: column;
+}
+
+footer .support a {
+  font-family: "IBM Plex Mono";
+  color: #4f596a;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-left: 0;
+}
+footer .social-media img {
+  margin-left: 20px;
+  margin-top: 60px;
 }

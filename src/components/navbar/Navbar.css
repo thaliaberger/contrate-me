@@ -25,6 +25,11 @@
   cursor: pointer;
 }
 
+.links-div a {
+  color: #001a49;
+  text-decoration: none;
+}
+
 .navbar p:hover,
 a:hover {
   opacity: 75%;

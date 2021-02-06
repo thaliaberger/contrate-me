@@ -14,7 +14,9 @@ function Navbar() {
       <div className="links-div">
         <p>Como funciona?</p>
         <p>Dúvidas</p>
-        <p>Empresa</p>
+        <Link className="business-navbar-entrar" to="/empresa">
+          Empresa
+        </Link>
       </div>
       <div className="login-div">
         <Link className="navbar-entrar" to="/">
