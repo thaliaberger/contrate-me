@@ -6,8 +6,7 @@ function NewChallenge() {
   const [state, setState] = useState({
     nome: "",
     descricao: "",
-    linkExterno: "",
-    empresaId: "",
+    linkExterno: ""
   });
 
   const history = useHistory();
