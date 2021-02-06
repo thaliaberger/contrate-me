@@ -5,14 +5,14 @@ import axios from "axios";
 function Candidate() {
   const [state, setState] = useState({
     nome: "",
-    data_nascimento: "",
+    dataNascimento: "",
     email: "",
     telefone: "",
     estado: "AC",
-    nivel_formacao: "",
-    area_formacao: "",
-    area_atuacao: "",
-    area_interesse: "",
+    nivelFormacao: "",
+    areaFormacao: "",
+    areaAtuacao: "",
+    areaInteresse: "",
     tecnologias: [],
   });
 
@@ -69,7 +69,7 @@ function Candidate() {
           id="novaDataDeNascimento"
           name="dataDeNascimento"
           onChange={handleChange}
-          value={state.data_nascimento}
+          value={state.dataNascimento}
         />
       </div>
 

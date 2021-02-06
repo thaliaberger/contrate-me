@@ -404,6 +404,33 @@ a:hover {
   cursor: pointer;
 }
 
+/* PARTNERS SECTION */
+
+.business-partners-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.business-partners-section-logos {
+  background: #e0e7f4;
+  height: 270px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.business-partners-section-logos img {
+  margin: 20px;
+}
+
+.logo-provi {
+  margin-top: 200px;
+  margin-bottom: 32px;
+}
 /* CALL TO ACTION */
 
 .business-action-section {

@@ -7,6 +7,10 @@ import triangulo1 from "../../images/triangulo roxo.svg";
 import triangulo2 from "../../images/triangulo amarelo.svg";
 import triangulo3 from "../../images/triangulo azul.svg";
 
+import provi from "../../images/PROVI.svg";
+import partners1 from "../../images/Frame 21.svg";
+import partners2 from "../../images/Frame 20.svg";
+
 import notificationsImage from "../../images/Group 25.svg";
 import rectangle from "../../images/Rectangle.svg";
 import team from "../../images/Workflow Teamwork.svg";
@@ -40,7 +44,7 @@ function BusinessHome() {
           <Link className="business-navbar-entrar" to="/">
             Entrar
           </Link>
-          <Link className="business-navbar-btn" to="/">
+          <Link className="business-navbar-btn" to="/empresa">
             Crescer minha empresa
           </Link>
         </div>
@@ -89,6 +93,16 @@ function BusinessHome() {
         <div>
           <h4>733</h4>
           <p>testes técnicos submetidos</p>
+        </div>
+      </section>
+
+      {/* PARTNERS */}
+
+      <section className="business-partners-section">
+        <img className="logo-provi" src={provi} />
+        <div className="business-partners-section-logos">
+          <img src={partners1} />
+          <img src={partners2} />
         </div>
       </section>
 
@@ -147,80 +161,17 @@ function BusinessHome() {
         </div>
       </section>
 
-      {/* NOTIFICATIONS */}
+      {/* TESTE */}
 
       <section className="business-notifications-section">
         <img src={notificationsImage} />
         <div>
-          <h5>
-            Receba notificações quando o teste da sua empresa for acessado
-          </h5>
+          <h5>Teste gratuitamente por 7 dias</h5>
           <p>
-            Identifique os candidatos que tem interesse na sua empresa, e decida
-            em continuar o processo seletivo de acordo com o a desenvolvimento
-            do teste.
+            Conheça a plataforma e os candidatos que estão se destacando durante
+            uma semana sem nenhum custo. Após esse período, o seu plano
+            escolhido entra em vigência.
           </p>
-        </div>
-      </section>
-
-      <section className="business-testimonials-section">
-        <h1>O que quem já foi contratado diz</h1>
-        <p className="business-testimonials-subtitle">
-          Entenda como o processo ajudou centenas de profissionais a se
-          colocarem no mercado.
-        </p>
-        <div className="business-testimonials">
-          <div className="business-testimonial">
-            <p>
-              “I waited to completely finish the course to rate it. This was my
-              first approach to python, i am an excel and VBA user. The
-              professor has an excellent way to explain it and a lot or order
-              and organization. I really recommend it.”
-            </p>
-            <div className="business-testimonial-user">
-              <img src={user1} />
-              <div className="business-testimonial-user-identification">
-                <p>
-                  <b>Henk Fortuin</b>
-                </p>
-                <p>Founder of Crips</p>
-              </div>
-            </div>
-          </div>
-          <div className="business-testimonial">
-            <p>
-              “I waited to completely finish the course to rate it. This was my
-              first approach to python, i am an excel and VBA user. The
-              professor has an excellent way to explain it and a lot or order
-              and organization. I really recommend it.”
-            </p>
-            <div className="business-testimonial-user">
-              <img src={user2} />
-              <div className="business-testimonial-user-identification">
-                <p>
-                  <b>Henk Fortuin</b>
-                </p>
-                <p>Founder of Crips</p>
-              </div>
-            </div>
-          </div>
-          <div className="business-testimonial">
-            <p>
-              “I waited to completely finish the course to rate it. This was my
-              first approach to python, i am an excel and VBA user. The
-              professor has an excellent way to explain it and a lot or order
-              and organization. I really recommend it.”
-            </p>
-            <div className="business-testimonial-user">
-              <img src={user3} />
-              <div className="business-testimonial-user-identification">
-                <p>
-                  <b>Henk Fortuin</b>
-                </p>
-                <p>Founder of Crips</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -304,6 +255,69 @@ function BusinessHome() {
           >
             Crescer minha empresa
           </a>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+
+      <section className="business-testimonials-section">
+        <h1>O que as empresas dizem?</h1>
+        <p className="business-testimonials-subtitle">
+          Entenda como o processo ajudou centenas de profissionais a se
+          colocarem no mercado.
+        </p>
+        <div className="business-testimonials">
+          <div className="business-testimonial">
+            <p>
+              “I waited to completely finish the course to rate it. This was my
+              first approach to python, i am an excel and VBA user. The
+              professor has an excellent way to explain it and a lot or order
+              and organization. I really recommend it.”
+            </p>
+            <div className="business-testimonial-user">
+              <img src={user1} />
+              <div className="business-testimonial-user-identification">
+                <p>
+                  <b>Henk Fortuin</b>
+                </p>
+                <p>Founder of Crips</p>
+              </div>
+            </div>
+          </div>
+          <div className="business-testimonial">
+            <p>
+              “I waited to completely finish the course to rate it. This was my
+              first approach to python, i am an excel and VBA user. The
+              professor has an excellent way to explain it and a lot or order
+              and organization. I really recommend it.”
+            </p>
+            <div className="business-testimonial-user">
+              <img src={user2} />
+              <div className="business-testimonial-user-identification">
+                <p>
+                  <b>Henk Fortuin</b>
+                </p>
+                <p>Founder of Crips</p>
+              </div>
+            </div>
+          </div>
+          <div className="business-testimonial">
+            <p>
+              “I waited to completely finish the course to rate it. This was my
+              first approach to python, i am an excel and VBA user. The
+              professor has an excellent way to explain it and a lot or order
+              and organization. I really recommend it.”
+            </p>
+            <div className="business-testimonial-user">
+              <img src={user3} />
+              <div className="business-testimonial-user-identification">
+                <p>
+                  <b>Henk Fortuin</b>
+                </p>
+                <p>Founder of Crips</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

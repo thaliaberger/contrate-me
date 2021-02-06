@@ -14,7 +14,7 @@ function Navbar() {
       <div className="links-div">
         <p>Como funciona?</p>
         <p>Dúvidas</p>
-        <Link className="business-navbar-entrar" to="/empresa">
+        <Link className="business-navbar-entrar" to="/business">
           Empresa
         </Link>
       </div>
@@ -22,7 +22,7 @@ function Navbar() {
         <Link className="navbar-entrar" to="/">
           Entrar
         </Link>
-        <Link className="navbar-btn" to="/">
+        <Link className="navbar-btn" to="/candidato">
           Provar meu conhecimento
         </Link>
       </div>

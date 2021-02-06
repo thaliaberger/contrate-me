@@ -118,6 +118,17 @@ h2 {
   background: linear-gradient(44.11deg, #9f06ff 15.75%, #cd10ff 84.63%);
 }
 
+/* FREE SECTION */
+
+.free-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+.free-section img {
+  margin-bottom: 20px;
+}
 /* SERVICES SECTION */
 
 .services-section {
@@ -180,7 +191,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .partners-section-logos {
@@ -198,7 +210,7 @@ h2 {
 }
 
 .logo-provi {
-  margin-top: 200px;
+  margin-top: 0;
   margin-bottom: 32px;
 }
 
