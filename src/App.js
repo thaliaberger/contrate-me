@@ -7,6 +7,7 @@ import BusinessHome from "../src/components/business/BusinessHome";
 import Candidate from "../src/components/candidate/Candidate";
 import Company from "../src/components/company/Company";
 import NewChallenge from "../src/components/new_challenge/NewChallenge";
+import Challenges from "../src/components/challenges/Challenges";
 
 function App() {
   return (
@@ -16,8 +17,7 @@ function App() {
           {/* Candidato */}
           <Route exact path="/" component={Homepage} />
           <Route exact path="/candidato" component={Candidate} />
-
-          {/* <Route path="/desafios" component={Desafios} /> */}
+          <Route path="/desafios" component={Challenges} />
 
           {/* Empresa */}
           <Route exact path="/business" component={BusinessHome} />
