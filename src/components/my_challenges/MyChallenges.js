@@ -3,50 +3,49 @@ import axios from "axios";
 import api from '../../services/api';
 import Sidebar from "../sidebar_candidate/SidebarCandidate";
 import Header from "../header/Header";
-import './Challenges.css';
+import './MyChallenges.css';
 
-function Challenges() {
+function MyChallenges() {
     const [challenges, setChallenges] = useState([]);
     const [solutions, setSolutions] = useState([]);
+    const [link, setLink] = useState();
     const candidato = localStorage.getItem('candidatoId');
    
 
     useEffect(() => {
         async function SearchChallenges(){
-            const response = await api.get(`/challenges`)
+            const response = await api.get(`/solutions`);
+
             setChallenges(response.data);
         }
 
         SearchChallenges();
     }, []);
 
-    async function createSolution(id){
+    async function sendSolution(id){
       const dataAtual = new Date();
       
-      const response = await api.post(`/solutions`, {
-          dataInicio: dataAtual.get(),
-          status: 'Em andamento',
-          candidatoId: candidato,
-          desafioId: id
-      })
+      const response = await api.put(`/solutions`, {
+          dataFim: dataAtual.get(),
+          status: 'Aguardando avaliação',
+          linkGithub: link
+        })
 
       setSolutions(response.data);
     }
 
   return (
-    <div className="challenges-section">
+    <div className="my-challenges-section">
         <Sidebar /> 
-        <div className="challenges-content">
+        <div className="my-challenges-content">
           <Header /> 
           <div>
-            <h1>Buscar testes</h1>
-            <div className="challenges-list">
+            <h1>Meus testes</h1>
+            <div className="my-challenges-list">
                 {
                     challenges.map(challenge =>(
                         <div className="challenge">
-                            <h3>{challenge.nome}</h3>
-                            <p>{challenge.descricao}</p>
-                            <a href={challenge.linkExterno} alt="Link externo">Link externo</a>
+                           
                         </div>
                     ))
                 }
@@ -58,4 +57,4 @@ function Challenges() {
   );
 }
 
-export default Challenges;
+export default MyChallenges;
