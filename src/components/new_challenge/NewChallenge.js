@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 import Sidebar from "../sidebar/Sidebar";
+import Header from "../header/Header";
 import './NewChallenge.css';
 
 function NewChallenge() {
@@ -39,6 +40,7 @@ function NewChallenge() {
     <div className="new-challenge-section">
         <Sidebar /> 
         <div className="new-challenge-content">
+          <Header /> 
           <h1>Cadastrar testes</h1>
           <form onSubmit={handleSubmit}>
               <h1>Teste</h1>
