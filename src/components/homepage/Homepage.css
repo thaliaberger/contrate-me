@@ -311,11 +311,11 @@ h2 {
   margin-top: 20px;
 }
 
-.display-none {
+.question .display-none {
   display: none;
 }
 
-.display-block {
+.question .display-block {
   display: block;
 }
 

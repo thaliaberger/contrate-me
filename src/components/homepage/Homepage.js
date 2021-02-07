@@ -216,7 +216,7 @@ function Homepage() {
               <img onClick={handleClick} src={down} />
             </div>
             <div>
-              <p className="display-block">
+              <p className="display-none">
                 Não existe nenhum custo para você utilizar a contrate.me!
                 Sabemos como o início de carreira é um momento sensível e
                 importante para todos, por isso, nos esforçamos para manter a

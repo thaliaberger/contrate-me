@@ -447,11 +447,11 @@ a:hover {
   margin-top: 20px;
 }
 
-.display-none {
+.business-question .display-none {
   display: none;
 }
 
-.display-block {
+.business-question .display-block {
   display: block;
 }
 

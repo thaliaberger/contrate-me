@@ -16,7 +16,7 @@ function Header() {
         );
 
         console.log(response.data);
-        setCandidate(response.data[3]);
+        setCandidate(response.data[0]);
         console.log(candidate);
       } catch (err) {}
     }

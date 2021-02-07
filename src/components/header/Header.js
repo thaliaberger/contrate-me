@@ -15,7 +15,7 @@ function Header() {
         );
 
         console.log(response.data);
-        setCompany(response.data[1]);
+        setCompany(response.data[0]);
         console.log(company);
       } catch (err) {}
     }
