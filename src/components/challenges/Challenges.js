@@ -59,9 +59,9 @@ function Challenges() {
                                 <h3>{challenge.nome}</h3>
                                 <p>para Provi</p>
                                 <div className="detail">
-                                  <span>{challenge.tecnologias}xxx</span>
-                                  <span>{challenge.destino}aaa</span>
-                                  <span>{challenge.area}eeee</span>
+                                  <span>{challenge.tecnologias}</span>
+                                  <span>{challenge.destino}</span>
+                                  <span>{challenge.area}</span>
                                 </div>
                                 <p>{challenge.descricao}</p>
                                 <div className="challenges-buttons">
@@ -81,63 +81,75 @@ function Challenges() {
             <div className="filters">
                 <h3>Buscar por área</h3>
                 <div className="area-list">
-                  <input
-                    onChange={handleArea}
-                    value="frontend"
-                    type="checkbox"
-                    id="frontend"
-                    name="frontend"
-                  ></input>
-                  <label htmlFor="frontend">Front-end</label>
+                  <div>
+                    <input
+                      onChange={handleArea}
+                      value="frontend"
+                      type="checkbox"
+                      id="frontend"
+                      name="frontend"
+                    ></input>
+                    <label htmlFor="frontend">Front-end</label>
+                  </div>
                   
-                  <input
-                    onChange={handleArea}
-                    value="backend"
-                    type="checkbox"
-                    id="backend"
-                    name="backend"
-                  ></input>
-                  <label htmlFor="backend">Back-end</label>
+                  <div>
+                    <input
+                      onChange={handleArea}
+                      value="backend"
+                      type="checkbox"
+                      id="backend"
+                      name="backend"
+                    ></input>
+                    <label htmlFor="backend">Back-end</label>
+                  </div>
 
-                  <input
-                    onChange={handleArea}
-                    value="fullstack"
-                    type="checkbox"
-                    id="fullstack"
-                    name="fullstack"
-                  ></input>
-                  <label htmlFor="fullstack">Fullstack</label>
+                  <div>
+                    <input
+                      onChange={handleArea}
+                      value="fullstack"
+                      type="checkbox"
+                      id="fullstack"
+                      name="fullstack"
+                    ></input>
+                    <label htmlFor="fullstack">Fullstack</label>
+                  </div>
                 </div>
 
                 <h3>Buscar por tecnologia</h3>
                 
                 <div className="tech-list">
-                <input
-                    onChange={handleTech}
-                    value="react"
-                    type="checkbox"
-                    id="react"
-                    name="react"
-                  ></input>
-                  <label htmlFor="react">React</label>
+                <div>
+                  <input
+                      onChange={handleTech}
+                      value="react"
+                      type="checkbox"
+                      id="react"
+                      name="react"
+                      ></input>
+                    <label htmlFor="react">React</label>
+                  </div>
                   
-                  <input
-                    onChange={handleTech}
-                    value="javascript"
-                    type="checkbox"
-                    id="javascript"
-                    name="javascript"
-                  ></input>
-                  <label htmlFor="javascript">Javascript</label>
+                  <div>
+                    <input
+                      onChange={handleTech}
+                      value="javascript"
+                      type="checkbox"
+                      id="javascript"
+                      name="javascript"
+                      ></input>
+                    <label htmlFor="javascript">Javascript</label>
+                  </div>
 
-                  <input
-                    onChange={handleTech}
-                    value="php"
-                    type="checkbox"
-                    id="php"
-                    name="php"
-                  ></input>
-                  <label htmlFor="php">PHP</label>
+                  <div>
+                    <input
+                      onChange={handleTech}
+                      value="php"
+                      type="checkbox"
+                      id="php"
+                      name="php"
+                      ></input>
+                    <label htmlFor="php">PHP</label>
+                  </div>
                 </div>
             </div>
           </div>

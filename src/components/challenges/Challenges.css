@@ -106,3 +106,41 @@
       width: 600px;
       justify-content: flex-end;
  }
+
+ .challenges-section .filters{
+    border: 3px solid rgba(166, 8, 255, 0.15);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 24px;
+    height: 500px;
+    margin-top: 4.2em;
+ }
+
+ .challenges-section .filters .area-list{
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 2em;
+}
+    
+.challenges-section .filters .area-list div,input, label{
+    margin: 0;
+}
+
+.challenges-section .filters .area-list input{
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+.challenges-section .filters .tech-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.challenges-section .filters .tech-list div,input, label{
+    margin: 0;
+}
+
+.challenges-section .filters .tech-list input{
+    margin-right: 1em;
+    margin-top: 1em;
+}
