@@ -4,6 +4,7 @@ import axios from "axios";
 
 import Sidebar from "../sidebar/Sidebar";
 import "./DashboardBusiness.css";
+import Header from "../header/Header";
 
 import number1 from "../../images/1.svg";
 import number2 from "../../images/2.svg";
@@ -59,9 +60,11 @@ function DashboardBusiness() {
     <div className="business-dashboard-container">
       <Sidebar />
       <div>
-        <nav className="business-dashboard-nav">
+        {/* <nav className="business-dashboard-nav">
           <p>Olá, {company.nome}</p>
         </nav>
+         */}
+        <Header />
         <div className="business-dashboard-content">
           <div>
             <h1>Visão geral dos testes</h1>

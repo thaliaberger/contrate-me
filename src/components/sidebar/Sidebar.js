@@ -14,7 +14,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <img className="logo" src={logo} alt="Contrate" />
-      <Link to="/" className="menu">
+      <Link to="/dashboard_empresa" className="menu">
         <img src={icon1} alt="Contrate" /> Visão geral
       </Link>
       <Link to="/novo_desafio" className="menu">
@@ -25,15 +25,15 @@ function Sidebar() {
         <img src={icon3} alt="Contrate" />
         Testes ativos
       </Link>
-      <Link to="/" className="menu">
+      <Link to="/dashboard_empresa" className="menu">
         <img src={icon4} alt="Contrate" />
         Candidatos
       </Link>
-      <Link to="/" className="menu">
+      <Link to="/dashboard_empresa" className="menu">
         <img src={icon5} alt="Contrate" />
         Configurações
       </Link>
-      <Link to="/" className="menu">
+      <Link to="/dashboard_empresa" className="menu">
         <img src={icon6} alt="Contrate" />
         Inscrição
       </Link>

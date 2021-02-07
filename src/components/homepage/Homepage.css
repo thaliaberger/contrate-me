@@ -71,6 +71,7 @@ h2 {
   height: 72px;
   font-size: 20px;
   margin: 0 0;
+  transition: 0.1 ease-in-out;
 }
 
 .header-btn:hover {
@@ -113,6 +114,7 @@ h2 {
   height: 52px;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.1 ease-in-out;
 }
 
 .home-btn:hover {

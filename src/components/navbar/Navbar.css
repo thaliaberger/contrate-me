@@ -23,11 +23,13 @@
 .links-div p {
   margin-right: 40px;
   cursor: pointer;
+  transition: 0.1 ease-in-out;
 }
 
 .links-div a {
   color: #001a49;
   text-decoration: none;
+  transition: 0.1 ease-in-out;
 }
 
 .navbar p:hover,
@@ -51,6 +53,7 @@ a:hover {
   border-radius: 33px;
   width: 256px;
   height: 52px;
+  transition: 0.1 ease-in-out;
 }
 
 .navbar-btn:hover {

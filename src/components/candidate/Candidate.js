@@ -48,6 +48,8 @@ function Candidate() {
       state
     );
 
+    localStorage.setItem("candidatoId", response.data._id);
+
     console.log(response);
     history.push("/dashboard");
   }

@@ -29,7 +29,7 @@ function App() {
           <Route exact path="/business" component={BusinessHome} />
           <Route exact path="/empresa" component={Company} />
           <Route path="/novo_desafio" component={NewChallenge} />
-          <Route path="/dashboard_company" component={DashboardBusiness} />
+          <Route path="/dashboard_empresa" component={DashboardBusiness} />
         </Switch>
       </BrowserRouter>
     </div>

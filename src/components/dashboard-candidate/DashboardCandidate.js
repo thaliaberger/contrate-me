@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 import SidebarCandidate from "../sidebar_candidate/SidebarCandidate";
+import HeaderCandidate from "../header-candidate/HeaderCandidate";
 import "./DashboardCandidate.css";
 
 import number1 from "../../images/1.svg";
@@ -56,9 +57,7 @@ function DashboardCandidate() {
     <div className="business-dashboard-container">
       <SidebarCandidate />
       <div>
-        <nav className="business-dashboard-nav">
-          <p>Olá, {candidate.nome}</p>
-        </nav>
+        <HeaderCandidate />
         <div className="business-dashboard-content">
           <div>
             <h1>Visão geral dos testes</h1>

@@ -1,12 +1,104 @@
-.new-challenge-section{
-    display: flex;
+.new-challenge-section {
+  display: flex;
 }
 
-.new-challenge-section h1{
-    margin: 0;
+.new-challenge-section h1 {
+  margin: 0;
+  font-size: 24px;
 }
 
-.new-challenge-content{
-    margin: 0;
-    width: 100%;
+.new-challenge-content {
+  margin: 0;
+  margin-left: 100px;
+  width: 100%;
+}
+
+.challenge-text-input {
+  color: #001a49;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 265px;
+  margin: 0;
+}
+
+.challenge-text-input input {
+  width: 365px;
+  border: 1px solid #cfd0d7;
+  border-radius: 2px;
+  height: 42px;
+}
+
+.challenge-text-input label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 0;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.challenge-button {
+  color: white;
+  background: linear-gradient(44.11deg, #002d7e 15.75%, #001a49 84.63%);
+  padding: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 33px;
+  width: 292px;
+  height: 72px;
+  margin: 50px 0 0 0;
+  border: none;
+  transition: 0.1 ease-in-out;
+}
+
+.challenge-button:hover {
+  cursor: pointer;
+  background: linear-gradient(44.11deg, #001a49 15.75%, #002d7e 84.63%);
+  opacity: 1;
+}
+
+.challenge-select-input {
+  color: #001a49;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+.challenge-select-input select {
+  width: 80px;
+  border: 1px solid #cfd0d7;
+  border-radius: 2px;
+  height: 42px;
+  margin-left: 0;
+}
+
+.challenge-select-input label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.challenge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.challenge-tec {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0 10px 0px;
+}
+
+.challenge-tec-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 120px);
+  font-size: 14px;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+}
+
+.challenge-tec-grid input {
+  width: 50px;
 }

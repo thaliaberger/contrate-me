@@ -25,11 +25,13 @@
 .business-links-div a {
   color: #001a49;
   text-decoration: none;
+  transition: 0.1 ease-in-out;
 }
 
 .business-links-div p {
   margin-right: 40px;
   cursor: pointer;
+  transition: 0.1 ease-in-out;
 }
 
 .business-navbar p:hover,
@@ -53,6 +55,7 @@ a:hover {
   border-radius: 33px;
   width: 256px;
   height: 52px;
+  transition: 0.1 ease-in-out;
 }
 
 .business-navbar-btn:hover {
@@ -179,6 +182,7 @@ a:hover {
   text-decoration: none;
   align-items: center;
   font-weight: bold;
+  transition: 0.1 ease-in-out;
 }
 
 .business-home-btn:hover {
@@ -375,6 +379,7 @@ a:hover {
   height: 52px;
   font-weight: bold;
   margin-left: 80px;
+  transition: 0.1 ease-in-out;
 }
 
 .planos-section-btn-crescer:hover {

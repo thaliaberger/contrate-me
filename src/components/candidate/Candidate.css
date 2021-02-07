@@ -90,6 +90,7 @@ nav {
   width: 320px;
   height: 72px;
   margin: 100px 0 100px 100px;
+  transition: 0.1 ease-in-out;
 }
 
 .candidate-btn:hover {

@@ -1,0 +1,19 @@
+.header-candidate-container {
+  margin-right: 0;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-candidate-container p {
+  font-weight: bold;
+  margin-right: 20px;
+  font-size: 16px;
+  margin-left: 0;
+}
+.header-candidate-container img {
+  margin-right: 20px;
+  margin-left: 5px;
+}
