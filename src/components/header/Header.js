@@ -6,13 +6,13 @@ import notification from "../../images/new.svg";
 
 function Header(){
     return(
-        <header>
+        <div className="header-company-container">
             <img className="logo" src={search} alt="Contrate" />
             <img className="logo" src={notification} alt="Contrate" />
             <p>Olá, Provi</p>
             <img className="logo" src={companyprofile} alt="Contrate" />
 
-        </header>
+        </div>
     );
 }
 
