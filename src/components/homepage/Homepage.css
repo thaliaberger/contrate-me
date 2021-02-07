@@ -75,6 +75,7 @@ h2 {
 
 .header-btn:hover {
   background: linear-gradient(44.11deg, #9f06ff 15.75%, #cd10ff 84.63%);
+  opacity: 1;
 }
 
 /* NUMBERS SECTION */
@@ -116,8 +117,20 @@ h2 {
 
 .home-btn:hover {
   background: linear-gradient(44.11deg, #9f06ff 15.75%, #cd10ff 84.63%);
+  opacity: 1;
 }
 
+/* FREE SECTION */
+
+.free-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+.free-section img {
+  margin-bottom: 20px;
+}
 /* SERVICES SECTION */
 
 .services-section {
@@ -180,7 +193,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .partners-section-logos {
@@ -198,7 +212,7 @@ h2 {
 }
 
 .logo-provi {
-  margin-top: 200px;
+  margin-top: 0;
   margin-bottom: 32px;
 }
 
@@ -209,7 +223,7 @@ h2 {
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 50px 50px 100px 50px;
+  padding: 50px;
 }
 
 .potential-section h5 {
@@ -231,6 +245,78 @@ h2 {
   margin-left: 0;
 }
 
+/* FAQ */
+
+.faq {
+  width: 100%;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("../../images/man-waving.svg");
+  background-position: 0 60%;
+  background-size: 600px;
+  background-repeat: no-repeat;
+}
+
+.faq-group {
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-group h5 {
+  color: #001a49;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: start;
+  margin-bottom: 32px;
+  margin-left: 100px;
+}
+
+.faq-group h3 {
+  color: #001a49;
+  font-size: 20px;
+  margin-left: 0;
+  width: 650px;
+}
+
+.faq-group p {
+  font-family: "IBM Plex Mono";
+  color: #4f596a;
+  padding: 20px;
+  width: 700px;
+  margin-left: 0;
+}
+
+.question {
+  width: 835px;
+  background-color: white;
+  padding-bottom: 20px;
+  border-radius: 21px;
+  border: 2px solid #002d7e;
+  margin-top: 20px;
+}
+
+.question-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.question-head {
+  cursor: pointer;
+}
+
 /* TESTIMONIALS */
 
 .testimonials-section {
@@ -250,12 +336,13 @@ h2 {
   font-size: 46px;
   max-width: 460px;
   color: white;
+  margin-top: 0px;
 }
 
 .testimonials-section .testimonials-subtitle {
   font-size: 20px;
   opacity: 0.8;
-  margin-top: 2em;
+  margin-top: 1em;
   max-width: 560px;
 }
 
@@ -309,32 +396,39 @@ footer {
   padding: 3em 2em;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  align-items: flex-start;
 }
 
 footer h3 {
   margin-left: 0;
 }
 
-footer .footer-collumn {
+footer .menu {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-footer .footer-collumn a{
+footer .menu a {
   font-family: "IBM Plex Mono";
-  margin: 0;
   color: #4f596a;
   text-decoration: none;
-  margin-top: 1em;
+  margin-top: 15px;
+  margin-left: 0;
 }
 
-footer .social-media{
+footer .support {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
+footer .support a {
+  font-family: "IBM Plex Mono";
+  color: #4f596a;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-left: 0;
+}
 footer .social-media img {
   margin-left: 20px;
   margin-top: 60px;

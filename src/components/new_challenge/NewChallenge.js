@@ -7,10 +7,16 @@ function NewChallenge() {
   const [state, setState] = useState({
     nome: "",
     descricao: "",
+<<<<<<< HEAD
     linkExterno: ""
+=======
+    linkExterno: "",
+>>>>>>> upstream/master
   });
 
   const history = useHistory();
+
+  console.log(state);
 
   function handleChange(event) {
     setState({
@@ -28,6 +34,7 @@ function NewChallenge() {
     );
 
     console.log(response);
+    localStorage.setItem("id", `${response.data._id}`);
     history.push("/");
   }
 
@@ -49,31 +56,31 @@ function NewChallenge() {
                 />
             </div>
 
-            {/* Data de Nascimento */}
-            <div className="">
-                <label htmlFor="novaDescricao">Descrição</label>
-                <input
-                type="text"
-                className=""
-                id="novaDescricao"
-                name="descricao"
-                onChange={handleChange}
-                value={state.descricao}
-                />
-            </div>
+      {/* Descrição*/}
+      <div className="">
+        <label htmlFor="descricao">Descrição</label>
+        <input
+          type="text"
+          className=""
+          id="descricao"
+          name="descricao"
+          onChange={handleChange}
+          value={state.descricao}
+        />
+      </div>
 
-            {/* Email */}
-            <div className="">
-                <label htmlFor="novoLinkExterno">Link Externo</label>
-                <input
-                type="text"
-                className=""
-                id="novoLinkExterno"
-                name="linkExterno"
-                onChange={handleChange}
-                value={state.linkExterno}
-                />
-            </div>
+      {/* Link Externo */}
+      <div className="">
+        <label htmlFor="linkExterno">Link Externo</label>
+        <input
+          type="text"
+          className=""
+          id="linkExterno"
+          name="linkExterno"
+          onChange={handleChange}
+          value={state.linkExterno}
+        />
+      </div>
 
             <button type="submit" className="">
                 Submit

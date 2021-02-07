@@ -1,0 +1,115 @@
+nav {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.company-links {
+  color: #001a49;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.company-login-btn {
+  border: 3px solid #001a49;
+  color: #001a49;
+  border-radius: 33px;
+  padding: 16px 24px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.company-container {
+  width: 100%;
+  background-image: url("../../images/Mask\ Group.svg");
+  background-position: 100% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.company-container img {
+  margin-left: 50px;
+}
+
+.company-h1 {
+  font-size: 24px;
+  margin: 0 100px;
+  padding-top: 100px;
+}
+
+.company-h2 {
+  font-size: 20px;
+  margin: 0 100px;
+}
+
+.company-container .text-input {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.company-container .text-input input {
+  width: 365px;
+  border: 1px solid #cfd0d7;
+  border-radius: 2px;
+  height: 42px;
+}
+
+.company-container .text-input label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 0;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.company-container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 16px;
+  width: 802px;
+  margin-left: 78px;
+}
+
+.company-btn {
+  color: white;
+  background: linear-gradient(44.11deg, #002d7e 15.75%, #001a49 84.63%);
+  padding: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 33px;
+  width: 320px;
+  height: 72px;
+  margin: 100px 0 100px 100px;
+}
+
+.company-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(44.11deg, #001a49 15.75%, #002d7e 84.63%);
+  opacity: 1;
+}
+
+.company-select-input {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.company-select-input select {
+  width: 80px;
+  border: 1px solid #cfd0d7;
+  border-radius: 2px;
+  height: 42px;
+}
+
+.company-select-input label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 0;
+  margin-bottom: 5px;
+}

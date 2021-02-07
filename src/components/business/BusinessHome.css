@@ -57,6 +57,7 @@ a:hover {
 
 .business-navbar-btn:hover {
   background: linear-gradient(44.11deg, #001a49 15.75%, #002d7e 84.63%);
+  opacity: 1;
 }
 
 /* HEADER */
@@ -137,6 +138,7 @@ a:hover {
 
 .business-header-btn:hover {
   background: linear-gradient(44.11deg, #001a49 15.75%, #002d7e 84.63%);
+  opacity: 1;
 }
 
 /* NUMBERS SECTION */
@@ -181,6 +183,7 @@ a:hover {
 
 .business-home-btn:hover {
   background: linear-gradient(44.11deg, #001a49 15.75%, #002d7e 84.63%);
+  opacity: 1;
 }
 
 /* SERVICES SECTION */
@@ -215,12 +218,14 @@ a:hover {
 .business-services-card-text p {
   font-size: 16px;
   line-height: 24px;
+  width: 700px;
+  margin-left: 0;
 }
 
 .business-services-section-header {
   text-align: center;
   width: 930px;
-  margin-top: 128px;
+  margin-top: 0px;
   margin-bottom: 50px;
 }
 
@@ -287,12 +292,13 @@ a:hover {
   font-size: 46px;
   max-width: 460px;
   color: white;
+  margin-top: 70px;
 }
 
 .business-testimonials-section .business-testimonials-subtitle {
   font-size: 20px;
   opacity: 0.8;
-  margin-top: 2em;
+  margin-top: 1em;
   max-width: 560px;
 }
 
@@ -322,6 +328,10 @@ a:hover {
   text-align: left;
 }
 
+.business-testimonials {
+  margin-bottom: 100px;
+}
+
 .business-testimonial .business-testimonial-user img {
   margin-right: 0;
 }
@@ -330,6 +340,46 @@ a:hover {
   .business-testimonial-user
   .business-testimonial-user-identification {
   margin-left: 1em;
+}
+
+/* CARDS */
+
+.planos-section {
+  background: #e0e7f4;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.planos-section-btns {
+  margin-top: 100px;
+}
+
+.planos-section-btn-teste {
+  cursor: pointer;
+  color: #001a49;
+  border-bottom: 2px solid #001a49;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.planos-section-btn-crescer {
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(44.11deg, #002d7e 15.75%, #001a49 84.63%);
+  padding: 24px;
+  font-size: 20px;
+  border-radius: 33px;
+  width: 256px;
+  height: 52px;
+  font-weight: bold;
+  margin-left: 80px;
+}
+
+.planos-section-btn-crescer:hover {
+  background: linear-gradient(44.11deg, #001a49 15.75%, #002d7e 84.63%);
+  opacity: 1;
 }
 
 /* FAQ */
@@ -404,6 +454,33 @@ a:hover {
   cursor: pointer;
 }
 
+/* PARTNERS SECTION */
+
+.business-partners-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.business-partners-section-logos {
+  background: #e0e7f4;
+  height: 270px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.business-partners-section-logos img {
+  margin: 20px;
+}
+
+.logo-provi {
+  margin-top: 100px;
+  margin-bottom: 32px;
+}
 /* CALL TO ACTION */
 
 .business-action-section {

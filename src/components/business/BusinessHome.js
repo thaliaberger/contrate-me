@@ -2,12 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./BusinessHome.css";
 
+import FooterBusiness from "../footer-business/FooterBusiness";
+
 import headerImage from "../../images/Group 24.svg";
 import triangulo1 from "../../images/triangulo roxo.svg";
 import triangulo2 from "../../images/triangulo amarelo.svg";
 import triangulo3 from "../../images/triangulo azul.svg";
 
+import provi from "../../images/PROVI.svg";
+import partners1 from "../../images/Frame 22.svg";
+import partners2 from "../../images/Frame 23.svg";
+
 import notificationsImage from "../../images/Group 25.svg";
+import cards from "../../images/Group 35.svg";
 import rectangle from "../../images/Rectangle.svg";
 import team from "../../images/Workflow Teamwork.svg";
 import boat from "../../images/Group 26.svg";
@@ -22,6 +29,18 @@ import down from "../../images/down.svg";
 import up from "../../images/up.svg";
 
 function BusinessHome() {
+  function handleWorksScroll() {
+    window.scrollTo({ top: 1600, behavior: "smooth" });
+  }
+
+  function handleDoubtsScroll() {
+    window.scrollTo({ top: 4100, behavior: "smooth" });
+  }
+
+  function ScrollTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <div className="business-home">
       <div className="business-navbar">
@@ -30,8 +49,8 @@ function BusinessHome() {
         </div>
 
         <div className="business-links-div">
-          <p>Como funciona?</p>
-          <p>Dúvidas</p>
+          <p onClick={handleWorksScroll}>Como funciona?</p>
+          <p onClick={handleDoubtsScroll}>Dúvidas</p>
           <Link className="business-navbar-candidato" to="/">
             Candidato
           </Link>
@@ -40,7 +59,7 @@ function BusinessHome() {
           <Link className="business-navbar-entrar" to="/">
             Entrar
           </Link>
-          <Link className="business-navbar-btn" to="/">
+          <Link className="business-navbar-btn" to="/empresa">
             Crescer minha empresa
           </Link>
         </div>
@@ -92,11 +111,21 @@ function BusinessHome() {
         </div>
       </section>
 
+      {/* PARTNERS */}
+
+      <section className="business-partners-section">
+        <img className="logo-provi" src={provi} />
+        <div className="business-partners-section-logos">
+          <img src={partners1} />
+          <img src={partners2} />
+        </div>
+      </section>
+
       {/* SERVICES */}
 
       <section className="business-services-section">
         <div className="business-services-section-header">
-          <h5>O que você vai encontrar?</h5>
+          <h5>Como funciona?</h5>
           <p>
             Seja o primeiro a achar candidatos incríveis onde nem todo mundo
             procura.e destacar!
@@ -115,7 +144,7 @@ function BusinessHome() {
         </div>
 
         <div className="business-services-card">
-          <img src={triangulo2} />
+          <img src={triangulo3} />
           <div className="business-services-card-text">
             <h6>Tenha acesso ao ranking de candidatos com mais destaque</h6>
             <p>
@@ -126,101 +155,38 @@ function BusinessHome() {
         </div>
 
         <div className="business-services-card">
-          <img src={triangulo3} />
-          <div className="business-services-card-text">
-            <h6>Se destaque e esteja entre os primeiros doo ranking</h6>
-            <p>
-              Suba até 03 projetos individuais, e compartilhe mais dos seu
-              conhecimento.
-            </p>
-          </div>
-        </div>
-
-        <div className="business-services-card">
           <img src={triangulo1} />
           <div className="business-services-card-text">
             <h6>Veja os links externos e conheça os candidatos</h6>
             <p>
-              Linkedin, Github, portfólio pessoal, CV... Quanto mais, melhor!
+              Linkedin, Github, portfólio pessoal, CV, todas informações ao seu
+              dispor.
             </p>
           </div>
         </div>
       </section>
 
-      {/* NOTIFICATIONS */}
+      {/* TESTE */}
 
       <section className="business-notifications-section">
         <img src={notificationsImage} />
         <div>
-          <h5>
-            Receba notificações quando o teste da sua empresa for acessado
-          </h5>
+          <h5>Teste gratuitamente por 7 dias</h5>
           <p>
-            Identifique os candidatos que tem interesse na sua empresa, e decida
-            em continuar o processo seletivo de acordo com o a desenvolvimento
-            do teste.
+            Conheça a plataforma e os candidatos que estão se destacando durante
+            uma semana sem nenhum custo. Após esse período, o seu plano
+            escolhido entra em vigência.
           </p>
         </div>
       </section>
 
-      <section className="business-testimonials-section">
-        <h1>O que quem já foi contratado diz</h1>
-        <p className="business-testimonials-subtitle">
-          Entenda como o processo ajudou centenas de profissionais a se
-          colocarem no mercado.
-        </p>
-        <div className="business-testimonials">
-          <div className="business-testimonial">
-            <p>
-              “I waited to completely finish the course to rate it. This was my
-              first approach to python, i am an excel and VBA user. The
-              professor has an excellent way to explain it and a lot or order
-              and organization. I really recommend it.”
-            </p>
-            <div className="business-testimonial-user">
-              <img src={user1} />
-              <div className="business-testimonial-user-identification">
-                <p>
-                  <b>Henk Fortuin</b>
-                </p>
-                <p>Founder of Crips</p>
-              </div>
-            </div>
-          </div>
-          <div className="business-testimonial">
-            <p>
-              “I waited to completely finish the course to rate it. This was my
-              first approach to python, i am an excel and VBA user. The
-              professor has an excellent way to explain it and a lot or order
-              and organization. I really recommend it.”
-            </p>
-            <div className="business-testimonial-user">
-              <img src={user2} />
-              <div className="business-testimonial-user-identification">
-                <p>
-                  <b>Henk Fortuin</b>
-                </p>
-                <p>Founder of Crips</p>
-              </div>
-            </div>
-          </div>
-          <div className="business-testimonial">
-            <p>
-              “I waited to completely finish the course to rate it. This was my
-              first approach to python, i am an excel and VBA user. The
-              professor has an excellent way to explain it and a lot or order
-              and organization. I really recommend it.”
-            </p>
-            <div className="business-testimonial-user">
-              <img src={user3} />
-              <div className="business-testimonial-user-identification">
-                <p>
-                  <b>Henk Fortuin</b>
-                </p>
-                <p>Founder of Crips</p>
-              </div>
-            </div>
-          </div>
+      {/* PLANOS */}
+
+      <section className="planos-section">
+        <img className="planos-section-image" src={cards} />
+        <div className="planos-section-btns">
+          <a className="planos-section-btn-teste">Começar teste de 7 dias</a>
+          <a className="planos-section-btn-crescer">Crescer minha empresa</a>
         </div>
       </section>
 
@@ -228,7 +194,7 @@ function BusinessHome() {
 
       <section className="business-faq">
         <div className="business-faq-group">
-          <h5>Perguntas Frequentes</h5>
+          <h5>Dúvidas</h5>
           <div className="business-question">
             <div className="business-question-head">
               <h3>Qual é o custo para utilizar a plataforma?</h3>
@@ -307,52 +273,71 @@ function BusinessHome() {
         </div>
       </section>
 
-      {/* FOOTER */}
+      {/* TESTIMONIALS */}
 
-      <footer>
-        <img src={logo} />
-        <div className="business-menu">
-          <h3>Menu</h3>
-          <a href="https://contrate-me.vercel.app/" alt="Como funciona">
-            Como funciona
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Dúvidas">
-            Dúvidas
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Empresas">
-            Empresas
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Entrar">
-            Entrar
-          </a>
+      <section className="business-testimonials-section">
+        <h1>O que as empresas dizem?</h1>
+        <p className="business-testimonials-subtitle">
+          Entenda como o processo ajudou centenas de profissionais a se
+          colocarem no mercado.
+        </p>
+        <div className="business-testimonials">
+          <div className="business-testimonial">
+            <p>
+              “I waited to completely finish the course to rate it. This was my
+              first approach to python, i am an excel and VBA user. The
+              professor has an excellent way to explain it and a lot or order
+              and organization. I really recommend it.”
+            </p>
+            <div className="business-testimonial-user">
+              <img src={user1} />
+              <div className="business-testimonial-user-identification">
+                <p>
+                  <b>Henk Fortuin</b>
+                </p>
+                <p>Founder of Crips</p>
+              </div>
+            </div>
+          </div>
+          <div className="business-testimonial">
+            <p>
+              “I waited to completely finish the course to rate it. This was my
+              first approach to python, i am an excel and VBA user. The
+              professor has an excellent way to explain it and a lot or order
+              and organization. I really recommend it.”
+            </p>
+            <div className="business-testimonial-user">
+              <img src={user2} />
+              <div className="business-testimonial-user-identification">
+                <p>
+                  <b>Henk Fortuin</b>
+                </p>
+                <p>Founder of Crips</p>
+              </div>
+            </div>
+          </div>
+          <div className="business-testimonial">
+            <p>
+              “I waited to completely finish the course to rate it. This was my
+              first approach to python, i am an excel and VBA user. The
+              professor has an excellent way to explain it and a lot or order
+              and organization. I really recommend it.”
+            </p>
+            <div className="business-testimonial-user">
+              <img src={user3} />
+              <div className="business-testimonial-user-identification">
+                <p>
+                  <b>Henk Fortuin</b>
+                </p>
+                <p>Founder of Crips</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="business-support">
-          <h3>Suporte</h3>
-          <a href="https://contrate-me.vercel.app/" alt="Email">
-            contato@mecontrate.com
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Ajuda & Suporte">
-            Ajuda & Suporte
-          </a>
-          <a
-            href="https://contrate-me.vercel.app/"
-            alt="Politica de privacidade"
-          >
-            Politica de privacidade
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Termos & Condições">
-            Termos & Condições
-          </a>
-        </div>
-        <div className="business-social-media">
-          <a href="https://contrate-me.vercel.app/" alt="Linkedin">
-            <img src={linkedin} />
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Instagram">
-            <img src={instagram} />
-          </a>
-        </div>
-      </footer>
+      </section>
+
+      {/* FOOTER */}
+      <FooterBusiness />
     </div>
   );
 }
