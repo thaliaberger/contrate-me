@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
 
@@ -14,26 +14,32 @@ import partners1 from "../../images/Frame 22.svg";
 import partners2 from "../../images/Frame 23.svg";
 import potentialImage from "../../images/Frame 7.svg";
 import rectangle from "../../images/Rectangle.svg";
-import manWaving from "../../images/man-waving.svg";
 import manGoingUp from "../../images/man-going-up.svg";
 import user1 from "../../images/user1.svg";
 import user2 from "../../images/user2.svg";
 import user3 from "../../images/user3.svg";
-import logo from "../../images/logo.svg";
-import linkedin from "../../images/linkedin.svg";
-import instagram from "../../images/instagram.svg";
 import avatars from "../../images/fotinhas.svg";
 import free from "../../images/Group 33.svg";
 import down from "../../images/down.svg";
 import up from "../../images/up.svg";
+import goTop from "../../images/up2.svg";
 
 function Homepage() {
+  const [display, setDisplay] = useState("go-top-none");
+  window.onscroll = () => handleScroll();
+
+  function handleScroll() {
+    document.documentElement.scrollTop > 450
+      ? setDisplay("go-top-block")
+      : setDisplay("go-top-none");
+  }
   function ScrollTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   return (
     <div className="homepage">
+      <img onClick={ScrollTop} className={display} src={goTop} />
       <Navbar />
       <header className="header-container">
         <div className="header-content">
