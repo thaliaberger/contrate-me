@@ -126,7 +126,6 @@ nav {
 }
 
 .candidate-tec-grid {
-  width: ;
   display: grid;
   grid-template-columns: repeat(6, 120px);
   font-size: 14px;
