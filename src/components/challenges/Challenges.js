@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import api from '../../services/api';
+import {useHistory} from 'react-router-dom';
 import Sidebar from "../sidebar_candidate/SidebarCandidate";
-import Header from "../header/Header";
+import Header from "../header-candidate/HeaderCandidate";
 import './Challenges.css';
 import react from "../../images/react-icon.svg";
 
@@ -10,7 +11,7 @@ function Challenges() {
     const [challenges, setChallenges] = useState([]);
     const [solutions, setSolutions] = useState([]);
     const candidato = localStorage.getItem('candidatoId');
-   
+    const history = useHistory();
 
     useEffect(() => {
         async function SearchChallenges(){
@@ -22,16 +23,16 @@ function Challenges() {
     }, []);
 
     async function createSolution(id){
-      const dataAtual = new Date();
       
       const response = await api.post(`/solutions`, {
-          dataInicio: dataAtual.get(),
+          dataInicio: Date().toLocaleString(),
           status: 'Em andamento',
           candidatoId: candidato,
           desafioId: id
       })
 
       setSolutions(response.data);
+      history.push('/meus_desafios');
     }
 
     function handleArea(){
@@ -68,9 +69,9 @@ function Challenges() {
                                   <a className="link-btn" href={challenge.linkExterno} alt="Link externo">
                                     Link externo
                                     </a>
-                                  <button className="challenge-btn">
-                                    Começar agora
-                                  </button>
+                                    <button onClick={() => createSolution(challenge._id)} className="challenge-btn">
+                                      Começar agora
+                                    </button>
                                 </div>
                               </div>
                           </div>
