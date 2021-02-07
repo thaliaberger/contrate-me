@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./BusinessHome.css";
 
@@ -6,7 +6,6 @@ import FooterBusiness from "../footer-business/FooterBusiness";
 
 import headerImage from "../../images/Group 24.svg";
 import triangulo1 from "../../images/triangulo roxo.svg";
-import triangulo2 from "../../images/triangulo amarelo.svg";
 import triangulo3 from "../../images/triangulo azul.svg";
 
 import provi from "../../images/PROVI.svg";
@@ -16,19 +15,25 @@ import partners2 from "../../images/Frame 23.svg";
 import notificationsImage from "../../images/Group 25.svg";
 import cards from "../../images/Group 35.svg";
 import rectangle from "../../images/Rectangle.svg";
-import team from "../../images/Workflow Teamwork.svg";
 import boat from "../../images/Group 26.svg";
 import user1 from "../../images/user1.svg";
 import user2 from "../../images/user2.svg";
 import user3 from "../../images/user3.svg";
 import logo from "../../images/logo.svg";
-import linkedin from "../../images/LinkedIn - Negative.svg";
-import instagram from "../../images/Instagram - Negative.svg";
 import avatars from "../../images/fotinhas.svg";
 import down from "../../images/down.svg";
 import up from "../../images/up.svg";
+import goTop from "../../images/up (1).svg";
 
 function BusinessHome() {
+  const [display, setDisplay] = useState("go-top-none");
+  window.onscroll = () => handleScroll();
+
+  function handleScroll() {
+    document.documentElement.scrollTop > 450
+      ? setDisplay("go-top-block")
+      : setDisplay("go-top-none");
+  }
   function handleWorksScroll() {
     window.scrollTo({ top: 1600, behavior: "smooth" });
   }
@@ -43,6 +48,7 @@ function BusinessHome() {
 
   return (
     <div className="business-home">
+      <img onClick={ScrollTop} className={display} src={goTop} />
       <div className="business-navbar">
         <div className="logo-div">
           <img className="logo-image" src={logo} />
@@ -81,7 +87,7 @@ function BusinessHome() {
             <div className="business-header-avatars-div">
               <img src={avatars} />
               <p>
-                Junte-se a <strong>300+</strong> profissionais contratados
+                Junte-se a <strong>50+</strong> empresas parceiras
               </p>
             </div>
           </div>
@@ -284,10 +290,10 @@ function BusinessHome() {
         <div className="business-testimonials">
           <div className="business-testimonial">
             <p>
-              “I waited to completely finish the course to rate it. This was my
-              first approach to python, i am an excel and VBA user. The
-              professor has an excellent way to explain it and a lot or order
-              and organization. I really recommend it.”
+              “A Contrate-me acelerou muito o nosso processo de contratação de
+              pessoas em início de carreira por facilitar o processo de seleção
+              já destacando os candidatos com as habilidades técnicas mostradas
+              na prática. Muito bom!”
             </p>
             <div className="business-testimonial-user">
               <img src={user1} />
@@ -295,16 +301,18 @@ function BusinessHome() {
                 <p>
                   <b>Henk Fortuin</b>
                 </p>
-                <p>Founder of Crips</p>
+                <p>CTO Crips</p>
               </div>
             </div>
           </div>
           <div className="business-testimonial">
             <p>
-              “I waited to completely finish the course to rate it. This was my
-              first approach to python, i am an excel and VBA user. The
-              professor has an excellent way to explain it and a lot or order
-              and organization. I really recommend it.”
+              “A plataforma resolve um dos grandes problemas para as
+              recrutadoras, que não conseguiam ter uma visibilidade dos skills
+              técnicos dos candidatos por só avaliar currículos, e muitas vezes
+              os candidatos não possuem certos requisitos exigidos no currículo,
+              mas na prática demonstram total domínio das habilidades exigidas
+              para o cargo”
             </p>
             <div className="business-testimonial-user">
               <img src={user2} />
@@ -312,16 +320,14 @@ function BusinessHome() {
                 <p>
                   <b>Henk Fortuin</b>
                 </p>
-                <p>Founder of Crips</p>
+                <p>CEO Crips</p>
               </div>
             </div>
           </div>
           <div className="business-testimonial">
             <p>
-              “I waited to completely finish the course to rate it. This was my
-              first approach to python, i am an excel and VBA user. The
-              professor has an excellent way to explain it and a lot or order
-              and organization. I really recommend it.”
+              “Excelente plataforma! Fácil, intuitiva e que consegue exibir
+              diretamente as habilidades dos candidatos”
             </p>
             <div className="business-testimonial-user">
               <img src={user3} />
@@ -329,7 +335,7 @@ function BusinessHome() {
                 <p>
                   <b>Henk Fortuin</b>
                 </p>
-                <p>Founder of Crips</p>
+                <p>Recruiter Crips</p>
               </div>
             </div>
           </div>

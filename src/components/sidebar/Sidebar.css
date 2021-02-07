@@ -1,30 +1,30 @@
-.sidebar{
-    background: #123677;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-width: 255px;
-    height: 100vh;
-    margin: 0;
-    padding: 0 2em;
+.sidebar {
+  background: #123677;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 255px;
+  height: 100vh;
+  margin: 0;
+  padding: 0 2em;
 }
 
-.sidebar .logo{
-    margin: 2em 0;
+.sidebar .logo {
+  margin: 2em 0;
 }
 
-.sidebar .menu{
-    text-decoration: none;
-    margin: 0;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 1em 0;
-    display: flex;
-    align-items: center;
+.sidebar .menu {
+  text-decoration: none;
+  margin: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
 }
 
-.sidebar .menu img{
-    margin: .7em 0;
-    margin-right: 1em;
+.sidebar .menu img {
+  margin: 0.7em 0;
+  margin-right: 1em;
 }

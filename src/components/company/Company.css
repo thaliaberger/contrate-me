@@ -86,6 +86,7 @@ nav {
   width: 320px;
   height: 72px;
   margin: 100px 0 100px 100px;
+  border: none;
 }
 
 .company-btn:hover {

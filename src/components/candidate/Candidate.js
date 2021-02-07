@@ -30,6 +30,7 @@ function Candidate() {
       ...state,
       [event.currentTarget.name]: event.currentTarget.value,
     });
+    console.log(state);
   }
 
   function handleTecnologias(event) {
@@ -48,7 +49,7 @@ function Candidate() {
     );
 
     console.log(response);
-    history.push("/");
+    history.push("/dashboard");
   }
 
   return (
@@ -82,12 +83,12 @@ function Candidate() {
 
               {/* Data de Nascimento */}
               <div className="text-input">
-                <label htmlFor="novaDataDeNascimento">Data de nascimento</label>
+                <label htmlFor="dataNascimento">Data de nascimento</label>
                 <input
                   type="text"
                   className=""
-                  id="novaDataDeNascimento"
-                  name="dataDeNascimento"
+                  id="dataNascimento"
+                  name="dataNascimento"
                   onChange={handleChange}
                   value={state.dataNascimento}
                 />
@@ -206,7 +207,7 @@ function Candidate() {
                 </select>
               </div>
               <div className="candidate-select-input">
-                <label htmlFor="areaAtuacao">Área de Formação</label>
+                <label htmlFor="areaAtuacao">Área de Atuação</label>
 
                 <select
                   onChange={handleChange}
@@ -235,7 +236,7 @@ function Candidate() {
                 </select>
               </div>
               <div className="candidate-select-input">
-                <label htmlFor="areaInteresse">Área de Formação</label>
+                <label htmlFor="areaInteresse">Área de Interesse</label>
 
                 <select
                   onChange={handleChange}
@@ -276,6 +277,7 @@ function Candidate() {
                   onChange={handleTecnologias}
                   type="checkbox"
                   id="comptia"
+                  value="CompTIA"
                   name="comptia"
                 ></input>
                 <label htmlFor="comptia">CompTIA</label>
@@ -284,6 +286,7 @@ function Candidate() {
                   onChange={handleTecnologias}
                   type="checkbox"
                   id="deepLearning"
+                  value="Deep Learning"
                   name="deepLearning"
                 ></input>
                 <label htmlFor="deepLearning">Deep Learning</label>
@@ -293,6 +296,7 @@ function Candidate() {
                   type="checkbox"
                   id="django"
                   name="django"
+                  value="Django"
                 ></input>
                 <label htmlFor="django">Django</label>
 
@@ -301,22 +305,16 @@ function Candidate() {
                   type="checkbox"
                   id="docker"
                   name="docker"
+                  value="Docker"
                 ></input>
                 <label htmlFor="docker">Docker</label>
 
                 <input
                   onChange={handleTecnologias}
                   type="checkbox"
-                  id="machineLearning"
-                  name="machineLearning"
-                ></input>
-                <label htmlFor="machineLearning">Machine Learning</label>
-
-                <input
-                  onChange={handleTecnologias}
-                  type="checkbox"
                   id="python"
                   name="python"
+                  value="Python"
                 ></input>
                 <label htmlFor="python">Python</label>
 
@@ -325,6 +323,7 @@ function Candidate() {
                   type="checkbox"
                   id="react"
                   name="react"
+                  value="React"
                 ></input>
                 <label htmlFor="react">React</label>
 
@@ -333,8 +332,27 @@ function Candidate() {
                   type="checkbox"
                   id="reactNative"
                   name="reactNative"
+                  value="React Native"
                 ></input>
                 <label htmlFor="reactNative">React Native</label>
+
+                <input
+                  onChange={handleTecnologias}
+                  type="checkbox"
+                  id="javascript"
+                  name="javascript"
+                  value="JavaScript"
+                ></input>
+                <label htmlFor="javascript">JavaScript</label>
+
+                <input
+                  onChange={handleTecnologias}
+                  type="checkbox"
+                  id="machineLearning"
+                  value="Machine Learning"
+                  name="machineLearning"
+                ></input>
+                <label htmlFor="machineLearning">Machine Learning</label>
               </div>
             </div>
           </div>
