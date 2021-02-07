@@ -21,8 +21,6 @@ import user2 from "../../images/user2.svg";
 import user3 from "../../images/user3.svg";
 import logo from "../../images/logo.svg";
 import avatars from "../../images/fotinhas.svg";
-import down from "../../images/down.svg";
-import up from "../../images/up.svg";
 import goTop from "../../images/up (1).svg";
 import apoio from "../../images/apoio.svg";
 
@@ -48,6 +46,12 @@ function BusinessHome() {
   }
 
   function handleClick(event) {
+    if (event.target.src === "https://i.ibb.co/N3TNWTk/Group-45.png") {
+      event.target.src = "https://i.ibb.co/gdN8L27/Group-44.png";
+    } else {
+      event.target.src = "https://i.ibb.co/N3TNWTk/Group-45.png";
+    }
+
     if (
       event.target.parentNode.parentNode.children[1].firstChild.className ===
       "display-block"
@@ -95,13 +99,13 @@ function BusinessHome() {
               Veja testes nas principais linguagens pedidas pelos seus clientes
               e presentes nos produtos que vêm se destacando no mercado
             </h2>
-            <Link className="business-header-btn" to="/">
+            <Link className="business-header-btn" to="/empresa">
               Crescer minha empresa
             </Link>
             <div className="business-header-avatars-div">
               <img src={avatars} />
               <p>
-                Junte-se a <strong>50+</strong> empresas parceiras
+                Encontre <strong>1000+</strong> profissionais cadastrados
               </p>
             </div>
           </div>
@@ -115,7 +119,7 @@ function BusinessHome() {
 
       <section className="business-numbers-section">
         <div>
-          <h4>54</h4>
+          <h4>11</h4>
           <p>empresas parceiras</p>
         </div>
         <img src={rectangle} />
@@ -205,8 +209,12 @@ function BusinessHome() {
       <section className="planos-section">
         <img className="planos-section-image" src={cards} />
         <div className="planos-section-btns">
-          <a className="planos-section-btn-teste">Começar teste de 7 dias</a>
-          <a className="planos-section-btn-crescer">Crescer minha empresa</a>
+          <Link to="" className="planos-section-btn-teste">
+            Começar teste de 7 dias
+          </Link>
+          <Link className="business-header-btn" to="/empresa">
+            Crescer minha empresa
+          </Link>
         </div>
       </section>
 
@@ -218,7 +226,10 @@ function BusinessHome() {
           <div className="business-question">
             <div className="business-question-head">
               <h3>Como posto a vaga da minha empresa na plataforma?</h3>
-              <img onClick={handleClick} src={down} />
+              <img
+                onClick={handleClick}
+                src="https://i.ibb.co/N3TNWTk/Group-45.png"
+              />
             </div>
             <div>
               <p className="display-none">
@@ -233,7 +244,10 @@ function BusinessHome() {
           <div className="business-question">
             <div className="business-question-head">
               <h3>Quem avalia os testes que a minha empresa submeter?</h3>
-              <img onClick={handleClick} src={down} />
+              <img
+                onClick={handleClick}
+                src="https://i.ibb.co/N3TNWTk/Group-45.png"
+              />
             </div>
             <div>
               <p className="display-none">
@@ -246,7 +260,10 @@ function BusinessHome() {
           <div className="business-question">
             <div className="business-question-head">
               <h3>A quais informações do candidato terei acesso?</h3>
-              <img onClick={handleClick} src={down} />
+              <img
+                onClick={handleClick}
+                src="https://i.ibb.co/N3TNWTk/Group-45.png"
+              />
             </div>
             <div>
               <p className="display-none">
@@ -260,7 +277,10 @@ function BusinessHome() {
           <div className="business-question">
             <div className="business-question-head">
               <h3>Posso testar a plataforma antes de me decidir?</h3>
-              <img onClick={handleClick} src={down} />
+              <img
+                onClick={handleClick}
+                src="https://i.ibb.co/N3TNWTk/Group-45.png"
+              />
             </div>
             <div>
               <p className="display-none">
@@ -281,13 +301,9 @@ function BusinessHome() {
             Seja o primeiro a achar candidatos incríveis onde nem todo mundo
             procura
           </h5>
-          <a
-            href="https://contrate-me.vercel.app/"
-            alt="Testar"
-            className="business-home-btn"
-          >
+          <Link className="business-header-btn" to="/empresa">
             Crescer minha empresa
-          </a>
+          </Link>
         </div>
       </section>
 

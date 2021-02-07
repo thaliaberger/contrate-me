@@ -36,7 +36,7 @@
 
 .business-navbar p:hover,
 a:hover {
-  opacity: 75%;
+  color: rgb(0, 26, 73, 0.75);
 }
 
 .business-login-div a {
@@ -45,12 +45,14 @@ a:hover {
 
 .business-navbar-entrar {
   color: #001a49;
-  margin-right: 20px;
+  margin-right: 0px;
+  border: none;
 }
 
 .business-navbar-btn {
   color: white;
   background: linear-gradient(44.11deg, #002d7e 15.75%, #001a49 84.63%);
+
   padding: 16px;
   border-radius: 33px;
   width: 256px;
@@ -60,7 +62,7 @@ a:hover {
 
 .business-navbar-btn:hover {
   background: linear-gradient(44.11deg, #001a49 15.75%, #002d7e 84.63%);
-  opacity: 1;
+  color: white;
 }
 
 /* HEADER */
@@ -141,7 +143,7 @@ a:hover {
 
 .business-header-btn:hover {
   background: linear-gradient(44.11deg, #001a49 15.75%, #002d7e 84.63%);
-  opacity: 1;
+  color: white;
 }
 
 /* NUMBERS SECTION */
@@ -187,7 +189,7 @@ a:hover {
 
 .business-home-btn:hover {
   background: linear-gradient(44.11deg, #001a49 15.75%, #002d7e 84.63%);
-  opacity: 1;
+  color: white;
 }
 
 /* SERVICES SECTION */
@@ -285,8 +287,11 @@ a:hover {
 /* TESTIMONIALS */
 
 .business-testimonials-section {
-  background: linear-gradient(44.11deg, #002d7e 15.75%, #001a49 84.63%);
-  opacity: 0.75;
+  background: linear-gradient(
+    44.11deg,
+    rgb(0, 45, 126, 0.75) 15.75%,
+    rgb(0, 25, 71, 0.75) 84.63%
+  );
   text-align: center;
   color: white;
   padding: 1em 0;
@@ -301,7 +306,6 @@ a:hover {
 
 .business-testimonials-section .business-testimonials-subtitle {
   font-size: 20px;
-  opacity: 0.8;
   margin-top: 1em;
   max-width: 560px;
 }
@@ -384,12 +388,13 @@ a:hover {
 
 .planos-section-btn-crescer:hover {
   background: linear-gradient(44.11deg, #001a49 15.75%, #002d7e 84.63%);
-  opacity: 1;
+  color: white;
 }
 
 /* FAQ */
 
 .business-faq {
+  height: 800px;
   width: 100%;
   display: flex;
   padding-top: 100px;

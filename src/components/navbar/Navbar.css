@@ -35,8 +35,8 @@
 
 .navbar p:hover,
 a:hover {
-  opacity: 75%;
   transition: 0.1 ease-in-out;
+  color: rgb(0, 26, 73, 0.75);
 }
 
 .login-div a {
@@ -60,5 +60,5 @@ a:hover {
 
 .navbar-btn:hover {
   background: linear-gradient(44.11deg, #9f06ff 15.75%, #cd10ff 84.63%);
-  transition: 0.1 ease-in-out;
+  color: white;
 }

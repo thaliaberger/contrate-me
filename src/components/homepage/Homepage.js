@@ -20,8 +20,6 @@ import user2 from "../../images/user2.svg";
 import user3 from "../../images/user3.svg";
 import avatars from "../../images/fotinhas.svg";
 import free from "../../images/Group 33.svg";
-import down from "../../images/down.svg";
-import up from "../../images/up.svg";
 import goTop from "../../images/up2.svg";
 
 function Homepage() {
@@ -38,6 +36,12 @@ function Homepage() {
   }
 
   function handleClick(event) {
+    if (event.target.src === "https://i.ibb.co/N3TNWTk/Group-45.png") {
+      event.target.src = "https://i.ibb.co/gdN8L27/Group-44.png";
+    } else {
+      event.target.src = "https://i.ibb.co/N3TNWTk/Group-45.png";
+    }
+
     if (
       event.target.parentNode.parentNode.children[1].firstChild.className ===
       "display-block"
@@ -194,13 +198,9 @@ function Homepage() {
       <section className="call-to-action">
         <div className="action-content">
           <h1>Pronto para se destacar no recrutamento e entrar no mercado?</h1>
-          <a
-            href="https://contrate-me.vercel.app/"
-            alt="Testar"
-            className="home-btn"
-          >
+          <Link className="header-btn" to="/candidato">
             Provar meu conhecimento
-          </a>
+          </Link>
         </div>
         <img src={manGoingUp} />
       </section>
@@ -213,7 +213,10 @@ function Homepage() {
           <div className="question">
             <div className="question-head">
               <h3>Qual é o custo para utilizar a plataforma?</h3>
-              <img onClick={handleClick} src={down} />
+              <img
+                onClick={handleClick}
+                src="https://i.ibb.co/N3TNWTk/Group-45.png"
+              />
             </div>
             <div>
               <p className="display-none">
@@ -227,7 +230,10 @@ function Homepage() {
           <div className="question">
             <div className="question-head">
               <h3>Como visualizo as vagas disponíveis?</h3>
-              <img onClick={handleClick} src={down} />
+              <img
+                onClick={handleClick}
+                src="https://i.ibb.co/N3TNWTk/Group-45.png"
+              />
             </div>
             <div>
               <p className="display-none">
@@ -242,7 +248,10 @@ function Homepage() {
           <div className="question">
             <div className="question-head">
               <h3>Quem poderá ver meus testes?</h3>
-              <img onClick={handleClick} src={down} />
+              <img
+                onClick={handleClick}
+                src="https://i.ibb.co/N3TNWTk/Group-45.png"
+              />
             </div>
             <div>
               <p className="display-none">
@@ -258,7 +267,10 @@ function Homepage() {
           <div className="question">
             <div className="question-head">
               <h3>Vou receber um certificado?</h3>
-              <img onClick={handleClick} src={down} />
+              <img
+                onClick={handleClick}
+                src="https://i.ibb.co/N3TNWTk/Group-45.png"
+              />
             </div>
             <div>
               <p className="display-none">
