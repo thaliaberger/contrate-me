@@ -1,0 +1,139 @@
+nav {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.candidate-links {
+  color: #001a49;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.candidate-login-btn {
+  border: 3px solid #cd10ff;
+  color: #001a49;
+  border-radius: 33px;
+  padding: 16px 24px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.candidate-container {
+  width: 100%;
+  background-image: url("../../images/Mask\ Group.svg");
+  background-position: 100% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.candidate-container img {
+  margin-left: 50px;
+}
+
+.candidate-h1 {
+  font-size: 24px;
+  margin: 0 100px;
+  padding-top: 100px;
+}
+
+.candidate-h2 {
+  font-size: 20px;
+  margin: 0 100px;
+}
+
+.candidate-container .text-input {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.candidate-container .text-input input {
+  width: 365px;
+  border: 1px solid #cfd0d7;
+  border-radius: 2px;
+  height: 42px;
+}
+
+.candidate-container .text-input label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 0;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.candidate-container-background {
+  background-color: white;
+  padding: 12px;
+  border-radius: 16px;
+  width: 802px;
+  margin-left: 78px;
+}
+
+.candidate-container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.candidate-btn {
+  color: white;
+  background: linear-gradient(44.11deg, #cd10ff 15.75%, #9f06ff 84.63%);
+  padding: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 33px;
+  border: none;
+  width: 320px;
+  height: 72px;
+  margin: 100px 0 100px 100px;
+}
+
+.candidate-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(44.11deg, #9f06ff 15.75%, #cd10ff 84.63%);
+  opacity: 1;
+}
+
+.candidate-select-input {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.candidate-select-input select {
+  width: 80px;
+  border: 1px solid #cfd0d7;
+  border-radius: 2px;
+  height: 42px;
+  margin-left: 0;
+}
+
+.candidate-select-input label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.candidate-tec {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0 10px 10px;
+}
+
+.candidate-tec-grid {
+  width: ;
+  display: grid;
+  grid-template-columns: repeat(6, 120px);
+  font-size: 14px;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+}
+
+.candidate-tec-grid input {
+  width: 50px;
+}

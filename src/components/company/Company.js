@@ -62,7 +62,7 @@ function Company() {
         <img src={line} />
         <form onSubmit={handleSubmit}>
           <h1 className="company-h1">Cadastro da empresa</h1>
-          <h1 className="company-h2">Informações Cadastrais</h1>
+          <h2 className="company-h2">Informações Cadastrais</h2>
           {/* Nome */}
           <div className="company-container-grid">
             <div className="text-input">
