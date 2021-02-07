@@ -1,0 +1,8 @@
+.challenges-section{
+    display: flex;
+    margin: 0;
+}
+
+.challenges-content{
+    width: 100%;
+}
