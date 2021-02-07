@@ -230,6 +230,7 @@ h2 {
   align-items: center;
   justify-content: center;
   padding: 50px;
+  margin-top: 80px;
 }
 
 .potential-section h5 {
@@ -329,11 +330,10 @@ h2 {
 .testimonials-section {
   background: linear-gradient(
     44.11deg,
-    #cd10ff 15.75%,
-    #cd10ff 15.76%,
-    #9f06ff 84.63%
+    rgb(205, 16, 255, 0.75) 15.75%,
+    rgb(205, 16, 255, 0.75) 15.76%,
+    rgba(145, 33, 219, 0.75) 84.63%
   );
-  opacity: 0.75;
   text-align: center;
   color: white;
   padding: 5em 0;

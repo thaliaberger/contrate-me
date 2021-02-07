@@ -45,7 +45,7 @@ a:hover {
 
 .business-navbar-entrar {
   color: #001a49;
-  margin-right: 0px;
+  margin-right: 40px;
   border: none;
 }
 
@@ -367,7 +367,8 @@ a:hover {
 .planos-section-btn-teste {
   cursor: pointer;
   color: #001a49;
-  border-bottom: 2px solid #001a49;
+  border: none;
+  margin-right: 80px;
   font-weight: bold;
   font-size: 20px;
 }
@@ -495,8 +496,8 @@ a:hover {
 .logo-provi {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
-  margin-bottom: 32px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 /* CALL TO ACTION */
 
