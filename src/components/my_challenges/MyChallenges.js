@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import api from '../../services/api';
 import Sidebar from "../sidebar_candidate/SidebarCandidate";
-import Header from "../header/Header";
+import Header from "../header-candidate/HeaderCandidate";
 import './MyChallenges.css';
 
 function MyChallenges() {
