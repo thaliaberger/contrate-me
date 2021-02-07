@@ -261,44 +261,40 @@ function Homepage() {
         <div className="testimonials">
           <div className="testimonial">
             <p>
-              “I waited to completely finish the course to rate it. This was my
-              first approach to python, i am an excel and VBA user. The
-              professor has an excellent way to explain it and a lot or order
-              and organization. I really recommend it.”
+              “Adorei a plataforma, intuitiva e simples de incluir as
+              informações. Já completei alguns testes técnicos e já fui chamado
+              para um processo seletivo.”
             </p>
             <div className="testimonial-user">
               <img src={user1} />
               <div className="testimonial-user-identification">
                 <p>
-                  <b>Henk Fortuin</b>
+                  <b>Yuri</b>
                 </p>
-                <p>Founder of Crips</p>
+                <p>Dev Front End</p>
               </div>
             </div>
           </div>
           <div className="testimonial">
             <p>
-              “I waited to completely finish the course to rate it. This was my
-              first approach to python, i am an excel and VBA user. The
-              professor has an excellent way to explain it and a lot or order
-              and organization. I really recommend it.”
+              “Realmente essa plataforma veio para ajudar quem está em início de
+              carreira. Consegui finalmente o emprego que tanto almejei!”
             </p>
             <div className="testimonial-user">
               <img src={user2} />
               <div className="testimonial-user-identification">
                 <p>
-                  <b>Henk Fortuin</b>
+                  <b>Agatha</b>
                 </p>
-                <p>Founder of Crips</p>
+                <p>Dev Front End</p>
               </div>
             </div>
           </div>
           <div className="testimonial">
             <p>
-              “I waited to completely finish the course to rate it. This was my
-              first approach to python, i am an excel and VBA user. The
-              professor has an excellent way to explain it and a lot or order
-              and organization. I really recommend it.”
+              “Obrigada Contrate-me! A ideia de mostrar as habilidades minhas na
+              prática acelerou minha visibilidade com as empresas! Já consegui
+              ser chamado para alguns processos seletivos”
             </p>
             <div className="testimonial-user">
               <img src={user3} />
@@ -306,7 +302,7 @@ function Homepage() {
                 <p>
                   <b>Henk Fortuin</b>
                 </p>
-                <p>Founder of Crips</p>
+                <p>Dev Back End</p>
               </div>
             </div>
           </div>

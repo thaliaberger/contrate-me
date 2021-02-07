@@ -37,7 +37,7 @@ function Sidebar() {
         <img src={icon6} alt="Contrate" />
         Inscrição
       </Link>
-      <Link to="/" className="menu">
+      <Link to="/business" className="menu">
         <img src={icon7} alt="Contrate" />
         Sair
       </Link>
