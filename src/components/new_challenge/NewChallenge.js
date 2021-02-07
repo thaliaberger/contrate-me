@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
+import Sidebar from "../sidebar/Sidebar";
 
 function NewChallenge() {
   const [state, setState] = useState({
@@ -34,20 +35,22 @@ function NewChallenge() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1>Teste</h1>
-      {/* Nome */}
-      <div className="">
-        <label htmlFor="novoNome">Nome</label>
-        <input
-          type="text"
-          className=""
-          id="novoNome"
-          name="nome"
-          onChange={handleChange}
-          value={state.nome}
-        />
-      </div>
+    <div>
+        <Sidebar /> 
+        <form onSubmit={handleSubmit}>
+            <h1>Teste</h1>
+            {/* Nome */}
+            <div className="">
+                <label htmlFor="novoNome">Nome</label>
+                <input
+                type="text"
+                className=""
+                id="novoNome"
+                name="nome"
+                onChange={handleChange}
+                value={state.nome}
+                />
+            </div>
 
       {/* Descrição*/}
       <div className="">
@@ -75,10 +78,11 @@ function NewChallenge() {
         />
       </div>
 
-      <button type="submit" className="">
-        Submit
-      </button>
-    </form>
+            <button type="submit" className="">
+                Submit
+            </button>
+        </form>
+    </div>
   );
 }
 
