@@ -1,0 +1,158 @@
+.business-dashboard-container {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-areas:
+    "sidenav   nav"
+    "sidenav content"
+    "sidenav content";
+  width: 100%;
+}
+
+.business-dashboard-nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: 0;
+  width: 70vw;
+}
+
+.business-dashboard-nav p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.business-dashboard-content {
+  grid-area: content;
+  width: 70vw;
+}
+
+.business-dashboard-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 30px 0 0 0;
+}
+
+.business-dashboard-content h2 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  color: #001a49;
+  margin: 0;
+}
+
+.business-dashboard-infos {
+  color: #335798;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.business-dashboard-infos .number {
+  color: #001a49;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.business-dashboard-tests {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #001a49;
+  width: 160px;
+  margin: 10px 0 50px 20px;
+}
+
+.business-ranking small {
+  font-family: "IBM Plex Mono";
+  font-size: 12px;
+  color: #335798;
+  margin: 0;
+}
+
+.business-cards {
+  display: flex;
+  margin: 40px 0;
+  width: 960px;
+}
+
+.business-card {
+  width: 253px;
+  height: 142px;
+  border: 3px solid #335798;
+  border-radius: 8px;
+  color: #001a49;
+  display: flex;
+  flex-direction: column;
+}
+
+.business-ranking-positions {
+  width: 960px;
+}
+.business-ranking-other-positions {
+  width: 895px;
+  border: 3px solid #335798;
+  border-radius: 8px;
+}
+
+.card-head {
+  display: flex;
+  align-items: baseline;
+  max-width: 253px;
+  margin: 0;
+}
+
+.card-candidate-function {
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  margin: 5px 0 0 10px;
+}
+
+.card-candidate-score {
+  font-family: "IBM Plex Mono";
+  font-size: 22px;
+  margin: 5px 0 0 10px;
+}
+
+.card-candidate-score strong {
+  color: #a608ff;
+}
+
+.blue-bg {
+  background: rgb(51, 87, 152, 0.1);
+}
+
+/* TABLE */
+
+.th-position {
+  width: 150px;
+}
+
+.th-candidate {
+  width: 200px;
+}
+
+.th-area {
+  width: 200px;
+}
+
+.th-testes {
+  width: 200px;
+}
+
+.th-score {
+  width: 150px;
+  padding: 10px 0;
+}
+
+.small {
+  font-family: "IBM Plex Mono";
+  font-size: 12px;
+  color: #001a49;
+}
+
+.blue-bg td {
+  padding: 10px 0;
+  text-align: center;
+}

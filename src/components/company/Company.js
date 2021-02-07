@@ -48,7 +48,7 @@ function Company() {
     );
 
     console.log(response);
-    history.push("/business");
+    history.push("/dashboard_company");
   }
 
   return (
@@ -66,12 +66,12 @@ function Company() {
           {/* Nome */}
           <div className="company-container-grid">
             <div className="text-input">
-              <label htmlFor="novoNome">Nome</label>
+              <label htmlFor="nome">Nome</label>
               <input
                 name="nome"
                 type="text"
                 className=""
-                id="novoNome"
+                id="nome"
                 onChange={handleChange}
                 value={state.nome}
               />

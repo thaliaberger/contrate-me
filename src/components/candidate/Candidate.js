@@ -48,7 +48,7 @@ function Candidate() {
     );
 
     console.log(response);
-    history.push("/");
+    history.push("/dashboard");
   }
 
   return (
