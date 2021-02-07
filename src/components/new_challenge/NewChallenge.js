@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
+import Sidebar from "../sidebar/Sidebar";
 
 function NewChallenge() {
   const [state, setState] = useState({
@@ -31,51 +32,54 @@ function NewChallenge() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1>Teste</h1>
-      {/* Nome */}
-      <div className="">
-        <label htmlFor="novoNome">Nome</label>
-        <input
-          type="text"
-          className=""
-          id="novoNome"
-          name="nome"
-          onChange={handleChange}
-          value={state.nome}
-        />
-      </div>
+    <div>
+        <Sidebar /> 
+        <form onSubmit={handleSubmit}>
+            <h1>Teste</h1>
+            {/* Nome */}
+            <div className="">
+                <label htmlFor="novoNome">Nome</label>
+                <input
+                type="text"
+                className=""
+                id="novoNome"
+                name="nome"
+                onChange={handleChange}
+                value={state.nome}
+                />
+            </div>
 
-      {/* Data de Nascimento */}
-      <div className="">
-        <label htmlFor="novaDescricao">Descrição</label>
-        <input
-          type="text"
-          className=""
-          id="novaDescricao"
-          name="descricao"
-          onChange={handleChange}
-          value={state.descricao}
-        />
-      </div>
+            {/* Data de Nascimento */}
+            <div className="">
+                <label htmlFor="novaDescricao">Descrição</label>
+                <input
+                type="text"
+                className=""
+                id="novaDescricao"
+                name="descricao"
+                onChange={handleChange}
+                value={state.descricao}
+                />
+            </div>
 
-      {/* Email */}
-      <div className="">
-        <label htmlFor="novoLinkExterno">Link Externo</label>
-        <input
-          type="text"
-          className=""
-          id="novoLinkExterno"
-          name="linkExterno"
-          onChange={handleChange}
-          value={state.linkExterno}
-        />
-      </div>
+            {/* Email */}
+            <div className="">
+                <label htmlFor="novoLinkExterno">Link Externo</label>
+                <input
+                type="text"
+                className=""
+                id="novoLinkExterno"
+                name="linkExterno"
+                onChange={handleChange}
+                value={state.linkExterno}
+                />
+            </div>
 
-      <button type="submit" className="">
-        Submit
-      </button>
-    </form>
+            <button type="submit" className="">
+                Submit
+            </button>
+        </form>
+    </div>
   );
 }
 
