@@ -7,11 +7,7 @@ function NewChallenge() {
   const [state, setState] = useState({
     nome: "",
     descricao: "",
-<<<<<<< HEAD
-    linkExterno: ""
-=======
     linkExterno: "",
->>>>>>> upstream/master
   });
 
   const history = useHistory();
