@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 import Sidebar from "../sidebar/Sidebar";
+import './NewChallenge.css';
 
 function NewChallenge() {
   const [state, setState] = useState({
@@ -35,53 +36,56 @@ function NewChallenge() {
   }
 
   return (
-    <div>
+    <div className="new-challenge-section">
         <Sidebar /> 
-        <form onSubmit={handleSubmit}>
-            <h1>Teste</h1>
-            {/* Nome */}
-            <div className="">
-                <label htmlFor="novoNome">Nome</label>
-                <input
-                type="text"
-                className=""
-                id="novoNome"
-                name="nome"
-                onChange={handleChange}
-                value={state.nome}
-                />
-            </div>
+        <div className="new-challenge-content">
+          <h1>Cadastrar testes</h1>
+          <form onSubmit={handleSubmit}>
+              <h1>Teste</h1>
+              {/* Nome */}
+              <div className="">
+                  <label htmlFor="novoNome">Título</label>
+                  <input
+                  type="text"
+                  className=""
+                  id="novoNome"
+                  name="nome"
+                  onChange={handleChange}
+                  value={state.nome}
+                  />
+              </div>
 
-      {/* Descrição*/}
-      <div className="">
-        <label htmlFor="descricao">Descrição</label>
-        <input
-          type="text"
-          className=""
-          id="descricao"
-          name="descricao"
-          onChange={handleChange}
-          value={state.descricao}
-        />
-      </div>
+        {/* Descrição*/}
+        <div className="">
+          <label htmlFor="descricao">Descrição</label>
+          <input
+            type="text"
+            className=""
+            id="descricao"
+            name="descricao"
+            onChange={handleChange}
+            value={state.descricao}
+          />
+        </div>
 
-      {/* Link Externo */}
-      <div className="">
-        <label htmlFor="linkExterno">Link Externo</label>
-        <input
-          type="text"
-          className=""
-          id="linkExterno"
-          name="linkExterno"
-          onChange={handleChange}
-          value={state.linkExterno}
-        />
-      </div>
+        {/* Link Externo */}
+        <div className="">
+          <label htmlFor="linkExterno">Link Externo</label>
+          <input
+            type="text"
+            className=""
+            id="linkExterno"
+            name="linkExterno"
+            onChange={handleChange}
+            value={state.linkExterno}
+          />
+        </div>
 
-            <button type="submit" className="">
-                Submit
-            </button>
-        </form>
+              <button type="submit" className="button">
+                Cadastrar teste técnico
+              </button>
+          </form>
+        </div>
     </div>
   );
 }

@@ -1,0 +1,7 @@
+.new-challenge-section{
+    display: flex;
+}
+
+.new-challenge-section h1{
+    margin: 0;
+}
