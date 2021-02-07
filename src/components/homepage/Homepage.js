@@ -46,7 +46,7 @@ function Homepage() {
               Prove seu conhecimento projetos e testes técnicos sugeridos pelas
               empresas que estão de olho em profissionais iniciantes/júnior.
             </h2>
-            <Link className="header-btn" to="/">
+            <Link className="header-btn" to="/candidato">
               Provar meu conhecimento
             </Link>
             <div className="header-avatars-div">
