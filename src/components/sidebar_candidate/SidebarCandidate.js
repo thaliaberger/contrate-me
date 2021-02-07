@@ -7,20 +7,37 @@ import icon5 from "../../images/icon5.svg";
 import icon7 from "../../images/icon7.svg";
 import icon8 from "../../images/icon8.svg";
 import { Link } from "react-router-dom";
-import './SidebarCandidate.css';
+import "./SidebarCandidate.css";
 
-function SidebarCandidate(){
-    return(
-        <div className="sidebar-candidate">
-            <img className="logo" src={logo} alt="Contrate" />
-            <Link to="/" className="menu"><img src={icon1} alt="Contrate" /> Visão geral</Link>
-            <Link to="/" className="menu"><img src={icon8} alt="Contrate" />Buscar testes</Link>
-            <Link to="/" className="menu"><img src={icon3} alt="Contrate" />Testes ativos</Link>
-            <Link to="/" className="menu"><img src={icon4} alt="Contrate" />Perfil</Link>
-            <Link to="/" className="menu"><img src={icon5} alt="Contrate" />Configurações</Link>
-            <Link to="/" className="menu"><img src={icon7} alt="Contrate" />Sair</Link>
-        </div>
-    );
+function SidebarCandidate() {
+  return (
+    <div className="sidebar-candidate">
+      <img className="logo" src={logo} alt="Contrate" />
+      <Link to="/dashboard" className="menu">
+        <img src={icon1} alt="Contrate" /> Visão geral
+      </Link>
+      <Link to="/" className="menu">
+        <img src={icon8} alt="Contrate" />
+        Buscar testes
+      </Link>
+      <Link to="/" className="menu">
+        <img src={icon3} alt="Contrate" />
+        Testes ativos
+      </Link>
+      <Link to="/dashboard" className="menu">
+        <img src={icon4} alt="Contrate" />
+        Perfil
+      </Link>
+      <Link to="/dashboard" className="menu">
+        <img src={icon5} alt="Contrate" />
+        Configurações
+      </Link>
+      <Link to="/" className="menu">
+        <img src={icon7} alt="Contrate" />
+        Sair
+      </Link>
+    </div>
+  );
 }
 
 export default SidebarCandidate;

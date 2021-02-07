@@ -48,7 +48,8 @@ function Company() {
     );
 
     console.log(response);
-    history.push("/dashboard_company");
+    localStorage.setItem("empresaId", response.data._id);
+    history.push("/dashboard_empresa");
   }
 
   return (
@@ -56,7 +57,9 @@ function Company() {
       <div className="company-container">
         <nav>
           <img src={logo} />
-          <Link className="company-links">Empresa</Link>
+          <Link to="/" className="company-links">
+            Candidato
+          </Link>
           <Link className="company-login-btn">Entrar</Link>
         </nav>
         <img src={line} />
