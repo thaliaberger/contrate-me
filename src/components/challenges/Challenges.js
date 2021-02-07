@@ -7,6 +7,9 @@ import './Challenges.css';
 
 function Challenges() {
     const [challenges, setChallenges] = useState([]);
+    const [solutions, setSolutions] = useState([]);
+    const candidato = localStorage.getItem('candidatoId');
+   
 
     useEffect(() => {
         async function SearchChallenges(){
@@ -17,13 +20,26 @@ function Challenges() {
         SearchChallenges();
     }, []);
 
+    async function createSolution(id){
+      const dataAtual = new Date();
+      
+      const response = await api.post(`/solutions`, {
+          dataInicio: dataAtual.get(),
+          status: 'Em andamento',
+          candidatoId: candidato,
+          desafioId: id
+      })
+
+      setSolutions(response.data);
+    }
+
   return (
     <div className="challenges-section">
         <Sidebar /> 
         <div className="challenges-content">
           <Header /> 
           <div>
-
+            <h1>Buscar testes</h1>
             <div className="challenges-list">
                 {
                     challenges.map(challenge =>(
