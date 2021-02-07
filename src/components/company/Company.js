@@ -60,7 +60,9 @@ function Company() {
           <Link to="/" className="company-links">
             Candidato
           </Link>
-          <Link className="company-login-btn">Entrar</Link>
+          <Link to="/dashboard_empresa" className="company-login-btn">
+            Entrar
+          </Link>
         </nav>
         <img src={line} />
         <form onSubmit={handleSubmit}>

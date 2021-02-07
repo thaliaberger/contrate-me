@@ -24,6 +24,7 @@ import avatars from "../../images/fotinhas.svg";
 import down from "../../images/down.svg";
 import up from "../../images/up.svg";
 import goTop from "../../images/up (1).svg";
+import apoio from "../../images/apoio.svg";
 
 function BusinessHome() {
   const [display, setDisplay] = useState("go-top-none");
@@ -46,6 +47,19 @@ function BusinessHome() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  function handleClick(event) {
+    if (
+      event.target.parentNode.parentNode.children[1].firstChild.className ===
+      "display-block"
+    ) {
+      event.target.parentNode.parentNode.children[1].firstChild.className =
+        "display-none";
+    } else {
+      event.target.parentNode.parentNode.children[1].firstChild.className =
+        "display-block";
+    }
+  }
+
   return (
     <div className="business-home">
       <img onClick={ScrollTop} className={display} src={goTop} />
@@ -62,7 +76,7 @@ function BusinessHome() {
           </Link>
         </div>
         <div className="business-login-div">
-          <Link className="business-navbar-entrar" to="/">
+          <Link className="business-navbar-entrar" to="/dashboard_empresa">
             Entrar
           </Link>
           <Link className="business-navbar-btn" to="/empresa">
@@ -120,7 +134,7 @@ function BusinessHome() {
       {/* PARTNERS */}
 
       <section className="business-partners-section">
-        <img className="logo-provi" src={provi} />
+        <img className="business-partners-apoio" src={apoio} />
         <div className="business-partners-section-logos">
           <img src={partners1} />
           <img src={partners2} />
@@ -143,7 +157,7 @@ function BusinessHome() {
           <div className="business-services-card-text">
             <h6>Solicite testes técnicos de nivelamento para suas vagas</h6>
             <p>
-              Categorize por linguagem, framework e área de atuação para
+              Categorize por linguagem, framework e área de atuação, para
               encontrar o profissional que sua empresa precisa.
             </p>
           </div>
@@ -165,8 +179,8 @@ function BusinessHome() {
           <div className="business-services-card-text">
             <h6>Veja os links externos e conheça os candidatos</h6>
             <p>
-              Linkedin, Github, portfólio pessoal, CV, todas informações ao seu
-              dispor.
+              Linkedin, Github, portfólio pessoal, CV... Todas informações ao
+              seu dispor.
             </p>
           </div>
         </div>
@@ -203,57 +217,55 @@ function BusinessHome() {
           <h5>Dúvidas</h5>
           <div className="business-question">
             <div className="business-question-head">
-              <h3>Qual é o custo para utilizar a plataforma?</h3>
-              <img src={down} />
+              <h3>Como posto a vaga da minha empresa na plataforma?</h3>
+              <img onClick={handleClick} src={down} />
             </div>
             <div>
-              <p className="display-block">
-                Não existe nenhum custo para você utilizar a contrate.me!
-                Sabemos como o início de carreira é um momento sensível e
-                importante para todos, por isso, nos esforçamos para manter a
-                plataforma de graça para vocês.
+              <p className="display-none">
+                A contrate.me não é uma plataforma de hospedagem de vagas. Aqui,
+                sua empresa poderá postar testes técnicos da área de
+                desenvolvimento, para avaliar as habilidades de vários
+                candidatos e selecionar os melhores para o seu processo
+                seletivo.
               </p>
             </div>
           </div>
           <div className="business-question">
             <div className="business-question-head">
-              <h3>Como visualizo as vagas disponíveis?</h3>
-              <img src={down} />
+              <h3>Quem avalia os testes que a minha empresa submeter?</h3>
+              <img onClick={handleClick} src={down} />
             </div>
             <div>
               <p className="display-none">
-                Não existe nenhum custo para você utilizar a contrate.me!
-                Sabemos como o início de carreira é um momento sensível e
-                importante para todos, por isso, nos esforçamos para manter a
-                plataforma de graça para vocês.
+                A contrate.me tem uma rede de profissionais de desenvolvimento
+                que está disponível para corrigir as soluções dos candidatos
+                para você!
               </p>
             </div>
           </div>
           <div className="business-question">
             <div className="business-question-head">
-              <h3>Quem poderá ver meus testes?</h3>
-              <img src={down} />
+              <h3>A quais informações do candidato terei acesso?</h3>
+              <img onClick={handleClick} src={down} />
             </div>
             <div>
               <p className="display-none">
-                Não existe nenhum custo para você utilizar a contrate.me!
-                Sabemos como o início de carreira é um momento sensível e
-                importante para todos, por isso, nos esforçamos para manter a
-                plataforma de graça para vocês.
+                Depois que o candidato realizar um teste da sua empresa, você
+                terá acesso ao perfil dele. Assim você poderá visualizar os
+                links das principais plataformas de divulgação profissional para
+                conhecer mais do seu candidato.
               </p>
             </div>
           </div>
           <div className="business-question">
             <div className="business-question-head">
-              <h3>Vou receber um certificado?</h3>
-              <img src={down} />
+              <h3>Posso testar a plataforma antes de me decidir?</h3>
+              <img onClick={handleClick} src={down} />
             </div>
             <div>
               <p className="display-none">
-                Não existe nenhum custo para você utilizar a contrate.me!
-                Sabemos como o início de carreira é um momento sensível e
-                importante para todos, por isso, nos esforçamos para manter a
-                plataforma de graça para vocês.
+                Sim! Se preferir, você pode escolher um plano e testar a
+                contrate.me por 7 dias sem pagar nada.
               </p>
             </div>
           </div>
@@ -284,16 +296,16 @@ function BusinessHome() {
       <section className="business-testimonials-section">
         <h1>O que as empresas dizem?</h1>
         <p className="business-testimonials-subtitle">
-          Entenda como o processo ajudou centenas de profissionais a se
-          colocarem no mercado.
+          Veja como o recrutamento ficou mais simples e eficiente para essas
+          empresas.
         </p>
         <div className="business-testimonials">
           <div className="business-testimonial">
             <p>
               “A Contrate-me acelerou muito o nosso processo de contratação de
-              pessoas em início de carreira por facilitar o processo de seleção
-              já destacando os candidatos com as habilidades técnicas mostradas
-              na prática. Muito bom!”
+              pessoas em início de carreira, por facilitar o processo de
+              seleção, já destacando os candidatos com as habilidades técnicas
+              mostradas na prática. Muito bom!”
             </p>
             <div className="business-testimonial-user">
               <img src={user1} />
@@ -308,11 +320,11 @@ function BusinessHome() {
           <div className="business-testimonial">
             <p>
               “A plataforma resolve um dos grandes problemas para as
-              recrutadoras, que não conseguiam ter uma visibilidade dos skills
-              técnicos dos candidatos por só avaliar currículos, e muitas vezes
-              os candidatos não possuem certos requisitos exigidos no currículo,
-              mas na prática demonstram total domínio das habilidades exigidas
-              para o cargo”
+              recrutadoras, que não conseguiam ter uma visibilidade das skills
+              técnicas dos candidatos só avaliando os currículos. Muitas vezes
+              os candidatos não possuem certos requisitos exigidos, mas na
+              prática demonstram total domínio das habilidades necessárias para
+              o cargo”
             </p>
             <div className="business-testimonial-user">
               <img src={user2} />
@@ -326,7 +338,7 @@ function BusinessHome() {
           </div>
           <div className="business-testimonial">
             <p>
-              “Excelente plataforma! Fácil, intuitiva e que consegue exibir
+              “Excelente plataforma! Fácil, intuitiva, e consegue exibir
               diretamente as habilidades dos candidatos”
             </p>
             <div className="business-testimonial-user">
@@ -341,6 +353,7 @@ function BusinessHome() {
           </div>
         </div>
       </section>
+      <img className="logo-provi" src={provi} />
 
       {/* FOOTER */}
       <FooterBusiness />

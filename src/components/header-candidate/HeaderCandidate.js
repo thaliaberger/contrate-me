@@ -4,6 +4,8 @@ import axios from "axios";
 import search from "../../images/search.svg";
 import notification from "../../images/new.svg";
 
+import userPic from "../../images/Imagem7 1.svg";
+
 function Header() {
   const [candidate, setCandidate] = useState({});
   useEffect(() => {
@@ -14,7 +16,7 @@ function Header() {
         );
 
         console.log(response.data);
-        setCandidate(response.data[1]);
+        setCandidate(response.data[3]);
         console.log(candidate);
       } catch (err) {}
     }
@@ -25,7 +27,7 @@ function Header() {
       <img className="logo" src={search} alt="Contrate" />
       <img className="logo" src={notification} alt="Contrate" />
       <p>Olá, {candidate.nome}</p>
-      <img className="logo" src="" alt="Usuário" />
+      <img className="logo" src={userPic} alt="Usuário" />
     </div>
   );
 }

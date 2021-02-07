@@ -27,7 +27,7 @@ function Navbar() {
         </Link>
       </div>
       <div className="login-div">
-        <Link className="navbar-entrar" to="/">
+        <Link className="navbar-entrar" to="/dashboard">
           Entrar
         </Link>
         <Link className="navbar-btn" to="/candidato">

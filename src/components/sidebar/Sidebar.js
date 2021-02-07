@@ -21,7 +21,7 @@ function Sidebar() {
         <img src={icon2} alt="Contrate" />
         Cadastrar testes
       </Link>
-      <Link to="/" className="menu">
+      <Link to="/dashboard_empresa" className="menu">
         <img src={icon3} alt="Contrate" />
         Testes ativos
       </Link>
@@ -32,10 +32,6 @@ function Sidebar() {
       <Link to="/dashboard_empresa" className="menu">
         <img src={icon5} alt="Contrate" />
         Configurações
-      </Link>
-      <Link to="/dashboard_empresa" className="menu">
-        <img src={icon6} alt="Contrate" />
-        Inscrição
       </Link>
       <Link to="/business" className="menu">
         <img src={icon7} alt="Contrate" />

@@ -16,11 +16,11 @@ function SidebarCandidate() {
       <Link to="/dashboard" className="menu">
         <img src={icon1} alt="Contrate" /> Visão geral
       </Link>
-      <Link to="/" className="menu">
+      <Link to="/desafios" className="menu">
         <img src={icon8} alt="Contrate" />
         Buscar testes
       </Link>
-      <Link to="/" className="menu">
+      <Link to="/meus_desafios" className="menu">
         <img src={icon3} alt="Contrate" />
         Testes ativos
       </Link>

@@ -37,6 +37,19 @@ function Homepage() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  function handleClick(event) {
+    if (
+      event.target.parentNode.parentNode.children[1].firstChild.className ===
+      "display-block"
+    ) {
+      event.target.parentNode.parentNode.children[1].firstChild.className =
+        "display-none";
+    } else {
+      event.target.parentNode.parentNode.children[1].firstChild.className =
+        "display-block";
+    }
+  }
+
   return (
     <div className="homepage">
       <img onClick={ScrollTop} className={display} src={goTop} />
@@ -90,15 +103,15 @@ function Homepage() {
       <section className="free-section">
         <img src={free} />
         <p>
-          Com apoio das nossas empresas parceiras, a contrate.me é totalmente
-          gratuita para você, e sempre será.
+          Com apoio das nossas empresas parceiras, a{" "}
+          <strong>contrate.me</strong> é totalmente gratuita para você, e sempre
+          será.
         </p>
       </section>
 
       {/* PARTNERS */}
 
       <section className="partners-section">
-        <img className="logo-provi" src={provi} />
         <div className="partners-section-logos">
           <img src={partners1} />
           <img src={partners2} />
@@ -200,7 +213,7 @@ function Homepage() {
           <div className="question">
             <div className="question-head">
               <h3>Qual é o custo para utilizar a plataforma?</h3>
-              <img src={down} />
+              <img onClick={handleClick} src={down} />
             </div>
             <div>
               <p className="display-block">
@@ -214,42 +227,45 @@ function Homepage() {
           <div className="question">
             <div className="question-head">
               <h3>Como visualizo as vagas disponíveis?</h3>
-              <img src={down} />
+              <img onClick={handleClick} src={down} />
             </div>
             <div>
               <p className="display-none">
-                Não existe nenhum custo para você utilizar a contrate.me!
-                Sabemos como o início de carreira é um momento sensível e
-                importante para todos, por isso, nos esforçamos para manter a
-                plataforma de graça para vocês.
+                Não existem vagas cadastradas na contrate.me. Na plataforma,
+                você viasualiza testes técinos solicitados pelas empresas
+                parceiras. Assim, você pode submeter suas soluções para os
+                testes e provar as suas habilidades antes mesmo de ter seu
+                currículo analisado.
               </p>
             </div>
           </div>
           <div className="question">
             <div className="question-head">
               <h3>Quem poderá ver meus testes?</h3>
-              <img src={down} />
+              <img onClick={handleClick} src={down} />
             </div>
             <div>
               <p className="display-none">
-                Não existe nenhum custo para você utilizar a contrate.me!
-                Sabemos como o início de carreira é um momento sensível e
-                importante para todos, por isso, nos esforçamos para manter a
-                plataforma de graça para vocês.
+                Inicialmente, a empresa que solicitou o teste é a única que tem
+                acesso a sua solução. Caso você esteja no ranking semanal e uma
+                outra empresa se interessar por você, ela poderá ter acesso às
+                suas soluções mesmo que você não tenha completado testes nelas!
+                Assim, você aumenta a sua visibilidade e fica mais perto de
+                conquistar sua vaga.
               </p>
             </div>
           </div>
           <div className="question">
             <div className="question-head">
               <h3>Vou receber um certificado?</h3>
-              <img src={down} />
+              <img onClick={handleClick} src={down} />
             </div>
             <div>
               <p className="display-none">
-                Não existe nenhum custo para você utilizar a contrate.me!
-                Sabemos como o início de carreira é um momento sensível e
-                importante para todos, por isso, nos esforçamos para manter a
-                plataforma de graça para vocês.
+                A contate.me não é uma plataforma educacional, e nós não
+                emitimos certificados. Você receberá notas nos seus testes
+                submetidos e poderá aproveitar esse feedback para buscar
+                melhorar alguns pontos individualmente.
               </p>
             </div>
           </div>
@@ -314,7 +330,7 @@ function Homepage() {
           </div>
         </div>
       </section>
-
+      <img className="logo-provi" src={provi} />
       <Footer />
     </div>
   );

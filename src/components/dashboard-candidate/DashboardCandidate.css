@@ -31,7 +31,7 @@
 .candidate-dashboard-content h1 {
   font-size: 24px;
   font-weight: bold;
-  margin: 30px 0 0 0;
+  margin: 0;
 }
 
 .candidate-dashboard-content h2 {
@@ -43,6 +43,7 @@
 }
 
 .candidate-dashboard-infos {
+  display: flex;
   color: #335798;
   font-weight: bold;
   font-size: 19px;
@@ -59,9 +60,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 3px solid #001a49;
-  width: 160px;
-  margin: 10px 0 50px 20px;
+  border-bottom: 3px solid #a608ff;
+  width: 250px;
+  margin: 10px 0 50px 50px;
 }
 
 .candidate-ranking small {
@@ -80,7 +81,7 @@
 .candidate-card {
   width: 253px;
   height: 142px;
-  border: 3px solid #335798;
+  border: 3px solid #a608ff;
   border-radius: 8px;
   color: #001a49;
   display: flex;
@@ -92,7 +93,7 @@
 }
 .candidate-ranking-other-positions {
   width: 895px;
-  border: 3px solid #335798;
+  border: 3px solid #a608ff;
   border-radius: 8px;
 }
 
@@ -119,8 +120,8 @@
   color: #a608ff;
 }
 
-.blue-bg {
-  background: rgb(51, 87, 152, 0.1);
+.purple-bg {
+  background: #f0e9f4;
 }
 
 /* TABLE */
@@ -152,7 +153,7 @@
   color: #001a49;
 }
 
-.blue-bg td {
+.purple-bg td {
   padding: 10px 0;
   text-align: center;
 }

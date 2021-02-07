@@ -54,29 +54,37 @@ function DashboardCandidate() {
   }, []);
 
   return (
-    <div className="business-dashboard-container">
+    <div className="candidate-dashboard-container">
       <SidebarCandidate />
       <div>
         <HeaderCandidate />
-        <div className="business-dashboard-content">
+        <div className="candidate-dashboard-content">
           <div>
             <h1>Visão geral dos testes</h1>
-            <div className="business-dashboard-infos">
-              <div className="business-dashboard-tests">
+            <div className="candidate-dashboard-infos">
+              <div className="candidate-dashboard-tests">
                 <p>Cadastrados</p>
-                <p className="number">0</p>
+                <p className="number">5</p>
+              </div>
+              <div className="candidate-dashboard-tests">
+                <p>Em andamento</p>
+                <p className="number">1</p>
+              </div>
+              <div className="candidate-dashboard-tests">
+                <p>Aguardando Avaliação</p>
+                <p className="number">2</p>
               </div>
             </div>
           </div>
-          <div className="business-ranking">
-            <h2 className="business-ranking-title">Ranking de candidatos</h2>
+          <div className="candidate-ranking">
+            <h2 className="candidate-ranking-title">Ranking de candidatos</h2>
             <small>
               Atualizado em {date.getDate()} de {monName[date.getMonth()]} de{" "}
               {date.getFullYear()}{" "}
             </small>
-            <div className="business-ranking-positions">
-              <div className="business-cards">
-                <div className="business-card">
+            <div className="candidate-ranking-positions">
+              <div className="candidate-cards">
+                <div className="candidate-card">
                   <div className="card-head">
                     <img src={number1} />
                     <h3>Nome</h3>
@@ -86,7 +94,7 @@ function DashboardCandidate() {
                     0 testes/<strong>9.75</strong>
                   </p>
                 </div>
-                <div className="business-card">
+                <div className="candidate-card">
                   <div className="card-head">
                     <img src={number2} />
                     <h3>Nome</h3>
@@ -96,7 +104,7 @@ function DashboardCandidate() {
                     0 testes/<strong>9.75</strong>
                   </p>
                 </div>
-                <div className="business-card">
+                <div className="candidate-card">
                   <div className="card-head">
                     <img src={number3} />
                     <h3>Nome</h3>
@@ -107,7 +115,7 @@ function DashboardCandidate() {
                   </p>
                 </div>
               </div>
-              <div className="business-ranking-other-positions">
+              <div className="candidate-ranking-other-positions">
                 <table>
                   <thead>
                     <tr>
@@ -119,7 +127,7 @@ function DashboardCandidate() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="blue-bg">
+                    <tr className="purple-bg">
                       <td>
                         <strong>4°</strong>
                       </td>
