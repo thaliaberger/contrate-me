@@ -47,30 +47,36 @@ function Challenges() {
         <Sidebar /> 
         <div className="challenges-content">
           <Header /> 
-          <div>
-            <h1>Buscar testes</h1>
-            <div className="challenges-list">
-                {
-                    challenges.map(challenge =>(
-                        <div className="challenge">
-                            <img src={react} alt="Desafio" />
-                            <div className="challenge-content">
-                              <h3>{challenge.nome}</h3>
-                              <p>para Provi</p>
-                              <div>
-                                <span>{challenge.tecnologias}</span>
-                                <span>{challenge.destino}</span>
-                                <span>{challenge.area}</span>
+          <div className="challenge-container">
+            <div className="challenge-container-search">
+              <h1>Buscar testes</h1>
+              <div className="challenges-list">
+                  {
+                      challenges.map(challenge =>(
+                          <div className="challenge">
+                              <img src={react} alt="Desafio" />
+                              <div className="challenge-content">
+                                <h3>{challenge.nome}</h3>
+                                <p>para Provi</p>
+                                <div className="detail">
+                                  <span>{challenge.tecnologias}xxx</span>
+                                  <span>{challenge.destino}aaa</span>
+                                  <span>{challenge.area}eeee</span>
+                                </div>
+                                <p>{challenge.descricao}</p>
+                                <div className="challenges-buttons">
+                                  <a className="link-btn" href={challenge.linkExterno} alt="Link externo">
+                                    Link externo
+                                    </a>
+                                  <button className="challenge-btn">
+                                    Começar agora
+                                  </button>
+                                </div>
                               </div>
-                              <p>{challenge.descricao}</p>
-                              <a href={challenge.linkExterno} alt="Link externo">Link externo</a>
-                              <button className="btn">
-                                Começar agora
-                              </button>
-                            </div>
-                        </div>
-                    ))
-                }
+                          </div>
+                      ))
+                  }
+              </div>
             </div>
             <div className="filters">
                 <h3>Buscar por área</h3>
