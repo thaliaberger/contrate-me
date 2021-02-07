@@ -5,6 +5,14 @@ import "./Navbar.css";
 import logo from "../../images/logo.svg";
 
 function Navbar() {
+  function handleWorksScroll() {
+    window.scrollTo({ top: 1800, behavior: "smooth" });
+  }
+
+  function handleDoubtsScroll() {
+    window.scrollTo({ top: 4100, behavior: "smooth" });
+  }
+
   return (
     <div className="navbar">
       <div className="logo-div">
@@ -12,8 +20,8 @@ function Navbar() {
       </div>
 
       <div className="links-div">
-        <p>Como funciona?</p>
-        <p>Dúvidas</p>
+        <p onClick={handleWorksScroll}>Como funciona?</p>
+        <p onClick={handleDoubtsScroll}>Dúvidas</p>
         <Link className="business-navbar-entrar" to="/business">
           Empresa
         </Link>

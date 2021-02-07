@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 import "./Homepage.css";
 
 import Navbar from "../navbar/Navbar";
+import Footer from "../footer-candidate/FooterCandidate";
 
 import headerImage from "../../images/Group 3.svg";
 import triangulo1 from "../../images/triangulo roxo.svg";
 import triangulo2 from "../../images/triangulo amarelo.svg";
 import triangulo3 from "../../images/triangulo azul.svg";
 import provi from "../../images/PROVI.svg";
-import partners1 from "../../images/Frame 21.svg";
-import partners2 from "../../images/Frame 20.svg";
+import partners1 from "../../images/Frame 22.svg";
+import partners2 from "../../images/Frame 23.svg";
 import potentialImage from "../../images/Frame 7.svg";
 import rectangle from "../../images/Rectangle.svg";
 import manWaving from "../../images/man-waving.svg";
@@ -23,8 +24,14 @@ import linkedin from "../../images/linkedin.svg";
 import instagram from "../../images/instagram.svg";
 import avatars from "../../images/fotinhas.svg";
 import free from "../../images/Group 33.svg";
+import down from "../../images/down.svg";
+import up from "../../images/up.svg";
 
 function Homepage() {
+  function ScrollTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <div className="homepage">
       <Navbar />
@@ -96,10 +103,10 @@ function Homepage() {
 
       <section className="services-section">
         <div className="services-section-header">
-          <h5>O que você vai encontrar?</h5>
+          <h5>Como funciona?</h5>
           <p>
-            Saiba como você vai ser notado pelo seu trabalho dos sonhos antes
-            mesmo de entrar no processo seletivo.
+            Você vai ser notado pelas suas habilidades, antes mesmo de entrar no
+            processo seletivo.
           </p>
         </div>
 
@@ -182,28 +189,68 @@ function Homepage() {
       {/* FAQ */}
 
       <section className="faq">
-        <img src={manWaving} />
         <div className="faq-group">
+          <h5>Dúvidas</h5>
           <div className="question">
-            <h3>Qual é o custo para utilizar a plataforma?</h3>
-            <p>
-              Não existe nenhum custo para você utilizar a contrate.me! Sabemos
-              como o início de carreira é um momento sensível e importante para
-              todos, por isso, nos esforçamos para manter a plataforma de graça
-              para vocês.
-            </p>
+            <div className="question-head">
+              <h3>Qual é o custo para utilizar a plataforma?</h3>
+              <img src={down} />
+            </div>
+            <div>
+              <p className="display-block">
+                Não existe nenhum custo para você utilizar a contrate.me!
+                Sabemos como o início de carreira é um momento sensível e
+                importante para todos, por isso, nos esforçamos para manter a
+                plataforma de graça para vocês.
+              </p>
+            </div>
           </div>
           <div className="question">
-            <h3>Como visualizo as vagas disponíveis?</h3>
+            <div className="question-head">
+              <h3>Como visualizo as vagas disponíveis?</h3>
+              <img src={down} />
+            </div>
+            <div>
+              <p className="display-none">
+                Não existe nenhum custo para você utilizar a contrate.me!
+                Sabemos como o início de carreira é um momento sensível e
+                importante para todos, por isso, nos esforçamos para manter a
+                plataforma de graça para vocês.
+              </p>
+            </div>
           </div>
           <div className="question">
-            <h3>Quem poderá ver meus testes?</h3>
+            <div className="question-head">
+              <h3>Quem poderá ver meus testes?</h3>
+              <img src={down} />
+            </div>
+            <div>
+              <p className="display-none">
+                Não existe nenhum custo para você utilizar a contrate.me!
+                Sabemos como o início de carreira é um momento sensível e
+                importante para todos, por isso, nos esforçamos para manter a
+                plataforma de graça para vocês.
+              </p>
+            </div>
           </div>
           <div className="question">
-            <h3>Vou receber um certificado?</h3>
+            <div className="question-head">
+              <h3>Vou receber um certificado?</h3>
+              <img src={down} />
+            </div>
+            <div>
+              <p className="display-none">
+                Não existe nenhum custo para você utilizar a contrate.me!
+                Sabemos como o início de carreira é um momento sensível e
+                importante para todos, por isso, nos esforçamos para manter a
+                plataforma de graça para vocês.
+              </p>
+            </div>
           </div>
         </div>
       </section>
+
+      {/* TESTIMONIALS */}
 
       <section className="testimonials-section">
         <h1>O que quem já foi contratado diz</h1>
@@ -266,50 +313,7 @@ function Homepage() {
         </div>
       </section>
 
-      <footer>
-        <img src={logo} />
-        <div className="menu">
-          <h3>Menu</h3>
-          <a href="https://contrate-me.vercel.app/" alt="Como funciona">
-            Como funciona
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Dúvidas">
-            Dúvidas
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Empresas">
-            Empresas
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Entrar">
-            Entrar
-          </a>
-        </div>
-        <div className="support">
-          <h3>Suporte</h3>
-          <a href="https://contrate-me.vercel.app/" alt="Email">
-            contato@mecontrate.com
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Ajuda & Suporte">
-            Ajuda & Suporte
-          </a>
-          <a
-            href="https://contrate-me.vercel.app/"
-            alt="Politica de privacidade"
-          >
-            Politica de privacidade
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Termos & Condições">
-            Termos & Condições
-          </a>
-        </div>
-        <div className="social-media">
-          <a href="https://contrate-me.vercel.app/" alt="Linkedin">
-            <img src={linkedin} />
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Instagram">
-            <img src={instagram} />
-          </a>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

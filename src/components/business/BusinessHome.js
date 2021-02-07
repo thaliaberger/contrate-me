@@ -2,16 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./BusinessHome.css";
 
+import FooterBusiness from "../footer-business/FooterBusiness";
+
 import headerImage from "../../images/Group 24.svg";
 import triangulo1 from "../../images/triangulo roxo.svg";
 import triangulo2 from "../../images/triangulo amarelo.svg";
 import triangulo3 from "../../images/triangulo azul.svg";
 
 import provi from "../../images/PROVI.svg";
-import partners1 from "../../images/Frame 21.svg";
-import partners2 from "../../images/Frame 20.svg";
+import partners1 from "../../images/Frame 22.svg";
+import partners2 from "../../images/Frame 23.svg";
 
 import notificationsImage from "../../images/Group 25.svg";
+import cards from "../../images/Group 35.svg";
 import rectangle from "../../images/Rectangle.svg";
 import team from "../../images/Workflow Teamwork.svg";
 import boat from "../../images/Group 26.svg";
@@ -26,6 +29,18 @@ import down from "../../images/down.svg";
 import up from "../../images/up.svg";
 
 function BusinessHome() {
+  function handleWorksScroll() {
+    window.scrollTo({ top: 1600, behavior: "smooth" });
+  }
+
+  function handleDoubtsScroll() {
+    window.scrollTo({ top: 4100, behavior: "smooth" });
+  }
+
+  function ScrollTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <div className="business-home">
       <div className="business-navbar">
@@ -34,8 +49,8 @@ function BusinessHome() {
         </div>
 
         <div className="business-links-div">
-          <p>Como funciona?</p>
-          <p>Dúvidas</p>
+          <p onClick={handleWorksScroll}>Como funciona?</p>
+          <p onClick={handleDoubtsScroll}>Dúvidas</p>
           <Link className="business-navbar-candidato" to="/">
             Candidato
           </Link>
@@ -110,7 +125,7 @@ function BusinessHome() {
 
       <section className="business-services-section">
         <div className="business-services-section-header">
-          <h5>O que você vai encontrar?</h5>
+          <h5>Como funciona?</h5>
           <p>
             Seja o primeiro a achar candidatos incríveis onde nem todo mundo
             procura.e destacar!
@@ -129,7 +144,7 @@ function BusinessHome() {
         </div>
 
         <div className="business-services-card">
-          <img src={triangulo2} />
+          <img src={triangulo3} />
           <div className="business-services-card-text">
             <h6>Tenha acesso ao ranking de candidatos com mais destaque</h6>
             <p>
@@ -140,22 +155,12 @@ function BusinessHome() {
         </div>
 
         <div className="business-services-card">
-          <img src={triangulo3} />
-          <div className="business-services-card-text">
-            <h6>Se destaque e esteja entre os primeiros doo ranking</h6>
-            <p>
-              Suba até 03 projetos individuais, e compartilhe mais dos seu
-              conhecimento.
-            </p>
-          </div>
-        </div>
-
-        <div className="business-services-card">
           <img src={triangulo1} />
           <div className="business-services-card-text">
             <h6>Veja os links externos e conheça os candidatos</h6>
             <p>
-              Linkedin, Github, portfólio pessoal, CV... Quanto mais, melhor!
+              Linkedin, Github, portfólio pessoal, CV, todas informações ao seu
+              dispor.
             </p>
           </div>
         </div>
@@ -175,11 +180,21 @@ function BusinessHome() {
         </div>
       </section>
 
+      {/* PLANOS */}
+
+      <section className="planos-section">
+        <img className="planos-section-image" src={cards} />
+        <div className="planos-section-btns">
+          <a className="planos-section-btn-teste">Começar teste de 7 dias</a>
+          <a className="planos-section-btn-crescer">Crescer minha empresa</a>
+        </div>
+      </section>
+
       {/* FAQ */}
 
       <section className="business-faq">
         <div className="business-faq-group">
-          <h5>Perguntas Frequentes</h5>
+          <h5>Dúvidas</h5>
           <div className="business-question">
             <div className="business-question-head">
               <h3>Qual é o custo para utilizar a plataforma?</h3>
@@ -322,51 +337,7 @@ function BusinessHome() {
       </section>
 
       {/* FOOTER */}
-
-      <footer>
-        <img src={logo} />
-        <div className="business-menu">
-          <h3>Menu</h3>
-          <a href="https://contrate-me.vercel.app/" alt="Como funciona">
-            Como funciona
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Dúvidas">
-            Dúvidas
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Empresas">
-            Empresas
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Entrar">
-            Entrar
-          </a>
-        </div>
-        <div className="business-support">
-          <h3>Suporte</h3>
-          <a href="https://contrate-me.vercel.app/" alt="Email">
-            contato@mecontrate.com
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Ajuda & Suporte">
-            Ajuda & Suporte
-          </a>
-          <a
-            href="https://contrate-me.vercel.app/"
-            alt="Politica de privacidade"
-          >
-            Politica de privacidade
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Termos & Condições">
-            Termos & Condições
-          </a>
-        </div>
-        <div className="business-social-media">
-          <a href="https://contrate-me.vercel.app/" alt="Linkedin">
-            <img src={linkedin} />
-          </a>
-          <a href="https://contrate-me.vercel.app/" alt="Instagram">
-            <img src={instagram} />
-          </a>
-        </div>
-      </footer>
+      <FooterBusiness />
     </div>
   );
 }
