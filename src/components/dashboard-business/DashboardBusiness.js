@@ -12,6 +12,13 @@ import number3 from "../../images/3.svg";
 
 function DashboardBusiness() {
   const [company, setCompany] = useState({});
+  const [candidates, setCandidates] = useState([]);
+  let newArray = [...candidates];
+  let sortedArray = newArray.sort(function (a, b) {
+    if (a.somaTotal > b.somaTotal) {
+      return 1;
+    }
+  });
 
   let date = new Date();
   let monName = new Array(
@@ -31,11 +38,9 @@ function DashboardBusiness() {
     async function fetchData() {
       try {
         const response = await axios.get(
-          "https://contrate-me-api.herokuapp.com/solutions"
+          "https://contrate-me-api.herokuapp.com/candidates"
         );
-
-        // console.log(response.data);
-        // setState();
+        setCandidates(response.data);
       } catch (err) {}
     }
     fetchData();
@@ -71,7 +76,7 @@ function DashboardBusiness() {
             <div className="business-dashboard-infos">
               <div className="business-dashboard-tests">
                 <p>Cadastrados</p>
-                <p className="number">0</p>
+                <p className="number">2</p>
               </div>
             </div>
           </div>
@@ -83,66 +88,58 @@ function DashboardBusiness() {
             </small>
             <div className="business-ranking-positions">
               <div className="business-cards">
-                <div className="business-card">
-                  <div className="card-head">
-                    <img src={number1} />
-                    <h3>Nome</h3>
+                {sortedArray.slice(0, 3).map((i, index) => (
+                  <div className="business-card">
+                    <div className="card-head">
+                      <img
+                        src={
+                          index + 1 === 1
+                            ? `${number1}`
+                            : index + 1 === 2
+                            ? `${number2}`
+                            : `${number3}`
+                        }
+                      />
+                      <h3>{i.nome}</h3>
+                    </div>
+                    <p className="card-business-function">{i.areaInteresse}</p>
+                    <p className="card-business-score">
+                      {i.testesResolvidos} testes/<strong>{i.somaTotal}</strong>
+                    </p>
                   </div>
-                  <p className="card-candidate-function">Função</p>
-                  <p className="card-candidate-score">
-                    0 testes/<strong>9.75</strong>
-                  </p>
-                </div>
-                <div className="business-card">
-                  <div className="card-head">
-                    <img src={number2} />
-                    <h3>Nome</h3>
-                  </div>
-                  <p className="card-candidate-function">Função</p>
-                  <p className="card-candidate-score">
-                    0 testes/<strong>9.75</strong>
-                  </p>
-                </div>
-                <div className="business-card">
-                  <div className="card-head">
-                    <img src={number3} />
-                    <h3>Nome</h3>
-                  </div>
-                  <p className="card-candidate-function">Função</p>
-                  <p className="card-candidate-score">
-                    0 testes/<strong>9.75</strong>
-                  </p>
-                </div>
+                ))}
               </div>
               <div className="business-ranking-other-positions">
                 <table>
                   <thead>
                     <tr>
                       <th className="th-position">Posição</th>
-                      <th className="th-candidate">Candidato</th>
+                      <th className="th-business">Candidato</th>
                       <th className="th-area">Área de atuação</th>
                       <th className="th-testes">Testes resolvidos</th>
                       <th className="th-score">Nota geral</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="blue-bg">
-                      <td>
-                        <strong>4°</strong>
-                      </td>
-                      <td>
-                        <strong>Nome</strong>
-                      </td>
-                      <td>
-                        <p className="small">Função</p>
-                      </td>
-                      <td>
-                        <strong>0</strong>
-                      </td>
-                      <td>
-                        <strong>9.75</strong>
-                      </td>
-                    </tr>
+                    {sortedArray.slice(3, 4).map((i, index) => (
+                      <tr className="blue-bg">
+                        <td>
+                          <strong>{index + 4}°</strong>
+                        </td>
+                        <td>
+                          <strong>{i.nome}</strong>
+                        </td>
+                        <td>
+                          <p className="small">{i.areaInteresse}</p>
+                        </td>
+                        <td>
+                          <strong>{i.testesResolvidos}</strong>
+                        </td>
+                        <td>
+                          <strong>{i.somaTotal}</strong>
+                        </td>
+                      </tr>
+                    ))}
                   </tbody>
                 </table>
               </div>

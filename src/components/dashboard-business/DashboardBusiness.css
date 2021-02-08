@@ -103,19 +103,19 @@
   margin: 0;
 }
 
-.card-candidate-function {
+.card-business-function {
   font-family: "IBM Plex Mono";
   font-size: 14px;
   margin: 5px 0 0 10px;
 }
 
-.card-candidate-score {
+.card-business-score {
   font-family: "IBM Plex Mono";
   font-size: 22px;
   margin: 5px 0 0 10px;
 }
 
-.card-candidate-score strong {
+.card-business-score strong {
   color: #a608ff;
 }
 
@@ -153,6 +153,6 @@
 }
 
 .blue-bg td {
-  padding: 10px 0;
+  padding: 10px 15px;
   text-align: center;
 }

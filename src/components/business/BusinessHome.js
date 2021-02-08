@@ -20,7 +20,7 @@ import user1 from "../../images/user1.svg";
 import user2 from "../../images/user2.svg";
 import user3 from "../../images/user3.svg";
 import logo from "../../images/logo.svg";
-import avatars from "../../images/fotinhas.svg";
+import avatars from "../../images/faces2.svg";
 import goTop from "../../images/up (1).svg";
 import apoio from "../../images/apoio.svg";
 
@@ -233,11 +233,11 @@ function BusinessHome() {
             </div>
             <div>
               <p className="display-none">
-                A contrate.me não é uma plataforma de hospedagem de vagas. Aqui,
-                sua empresa poderá postar testes técnicos da área de
-                desenvolvimento, para avaliar as habilidades de vários
-                candidatos e selecionar os melhores para o seu processo
-                seletivo.
+                A <strong>contrate.me </strong>não é uma plataforma de
+                hospedagem de vagas. Aqui, sua empresa poderá postar testes
+                técnicos da área de desenvolvimento, para avaliar as habilidades
+                de vários candidatos e selecionar os melhores para o seu
+                processo seletivo.
               </p>
             </div>
           </div>
@@ -251,9 +251,9 @@ function BusinessHome() {
             </div>
             <div>
               <p className="display-none">
-                A contrate.me tem uma rede de profissionais de desenvolvimento
-                que está disponível para corrigir as soluções dos candidatos
-                para você!
+                A <strong>contrate.me </strong>tem uma rede de profissionais de
+                desenvolvimento que está disponível para corrigir as soluções
+                dos candidatos para você!
               </p>
             </div>
           </div>
@@ -285,7 +285,7 @@ function BusinessHome() {
             <div>
               <p className="display-none">
                 Sim! Se preferir, você pode escolher um plano e testar a
-                contrate.me por 7 dias sem pagar nada.
+                <strong> contrate.me </strong>por 7 dias sem pagar nada.
               </p>
             </div>
           </div>
@@ -318,10 +318,10 @@ function BusinessHome() {
         <div className="business-testimonials">
           <div className="business-testimonial">
             <p>
-              “A Contrate-me acelerou muito o nosso processo de contratação de
-              pessoas em início de carreira, por facilitar o processo de
-              seleção, já destacando os candidatos com as habilidades técnicas
-              mostradas na prática. Muito bom!”
+              “A <strong>contrate.me </strong>acelerou muito o nosso processo de
+              contratação de pessoas em início de carreira, por facilitar o
+              processo de seleção, já destacando os candidatos com as
+              habilidades técnicas mostradas na prática. Muito bom!”
             </p>
             <div className="business-testimonial-user">
               <img src={user1} />

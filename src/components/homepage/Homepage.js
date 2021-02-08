@@ -220,10 +220,10 @@ function Homepage() {
             </div>
             <div>
               <p className="display-none">
-                Não existe nenhum custo para você utilizar a contrate.me!
-                Sabemos como o início de carreira é um momento sensível e
-                importante para todos, por isso, nos esforçamos para manter a
-                plataforma de graça para vocês.
+                Não existe nenhum custo para você utilizar a{" "}
+                <strong>contrate.me</strong>! Sabemos como o início de carreira
+                é um momento sensível e importante para todos, por isso, nos
+                esforçamos para manter a plataforma de graça para vocês.
               </p>
             </div>
           </div>
@@ -237,10 +237,10 @@ function Homepage() {
             </div>
             <div>
               <p className="display-none">
-                Não existem vagas cadastradas na contrate.me. Na plataforma,
-                você viasualiza testes técinos solicitados pelas empresas
-                parceiras. Assim, você pode submeter suas soluções para os
-                testes e provar as suas habilidades antes mesmo de ter seu
+                Não existem vagas cadastradas na <strong>contrate.me</strong>.
+                Na plataforma, você viasualiza testes técinos solicitados pelas
+                empresas parceiras. Assim, você pode submeter suas soluções para
+                os testes e provar as suas habilidades antes mesmo de ter seu
                 currículo analisado.
               </p>
             </div>
@@ -326,9 +326,9 @@ function Homepage() {
           </div>
           <div className="testimonial">
             <p>
-              “Obrigada Contrate-me! A ideia de mostrar as habilidades minhas na
-              prática acelerou minha visibilidade com as empresas! Já consegui
-              ser chamado para alguns processos seletivos”
+              “Obrigada <strong>contrate.me </strong>! A ideia de mostrar as
+              habilidades minhas na prática acelerou minha visibilidade com as
+              empresas! Já consegui ser chamado para alguns processos seletivos”
             </p>
             <div className="testimonial-user">
               <img src={user3} />

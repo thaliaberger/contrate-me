@@ -12,6 +12,13 @@ import number3 from "../../images/3.svg";
 
 function DashboardCandidate() {
   const [candidate, setCandidate] = useState({});
+  const [candidates, setCandidates] = useState([]);
+  let newArray = [...candidates];
+  let sortedArray = newArray.sort(function (a, b) {
+    if (a.somaTotal > b.somaTotal) {
+      return 1;
+    }
+  });
 
   let date = new Date();
   let monName = new Array(
@@ -31,23 +38,10 @@ function DashboardCandidate() {
     async function fetchData() {
       try {
         const response = await axios.get(
-          "https://contrate-me-api.herokuapp.com/solutions"
-        );
-
-        // console.log(response.data);
-        // setState();
-      } catch (err) {}
-    }
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await axios.get(
           "https://contrate-me-api.herokuapp.com/candidates"
         );
         setCandidate(response.data[3]);
+        setCandidates(response.data);
       } catch (err) {}
     }
     fetchData();
@@ -84,36 +78,26 @@ function DashboardCandidate() {
             </small>
             <div className="candidate-ranking-positions">
               <div className="candidate-cards">
-                <div className="candidate-card">
-                  <div className="card-head">
-                    <img src={number1} />
-                    <h3>Nome</h3>
+                {sortedArray.slice(0, 3).map((i, index) => (
+                  <div className="candidate-card">
+                    <div className="card-head">
+                      <img
+                        src={
+                          index + 1 === 1
+                            ? `${number1}`
+                            : index + 1 === 2
+                            ? `${number2}`
+                            : `${number3}`
+                        }
+                      />
+                      <h3>{i.nome}</h3>
+                    </div>
+                    <p className="card-candidate-function">{i.areaInteresse}</p>
+                    <p className="card-candidate-score">
+                      {i.testesResolvidos} testes/<strong>{i.somaTotal}</strong>
+                    </p>
                   </div>
-                  <p className="card-candidate-function">Função</p>
-                  <p className="card-candidate-score">
-                    0 testes/<strong>9.75</strong>
-                  </p>
-                </div>
-                <div className="candidate-card">
-                  <div className="card-head">
-                    <img src={number2} />
-                    <h3>Nome</h3>
-                  </div>
-                  <p className="card-candidate-function">Função</p>
-                  <p className="card-candidate-score">
-                    0 testes/<strong>9.75</strong>
-                  </p>
-                </div>
-                <div className="candidate-card">
-                  <div className="card-head">
-                    <img src={number3} />
-                    <h3>Nome</h3>
-                  </div>
-                  <p className="card-candidate-function">Função</p>
-                  <p className="card-candidate-score">
-                    0 testes/<strong>9.75</strong>
-                  </p>
-                </div>
+                ))}
               </div>
               <div className="candidate-ranking-other-positions">
                 <table>
@@ -127,23 +111,25 @@ function DashboardCandidate() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="purple-bg">
-                      <td>
-                        <strong>4°</strong>
-                      </td>
-                      <td>
-                        <strong>Nome</strong>
-                      </td>
-                      <td>
-                        <p className="small">Função</p>
-                      </td>
-                      <td>
-                        <strong>0</strong>
-                      </td>
-                      <td>
-                        <strong>9.75</strong>
-                      </td>
-                    </tr>
+                    {sortedArray.slice(3, 4).map((i, index) => (
+                      <tr className="purple-bg">
+                        <td>
+                          <strong>{index + 4}°</strong>
+                        </td>
+                        <td>
+                          <strong>{i.nome}</strong>
+                        </td>
+                        <td>
+                          <p className="small">{i.areaInteresse}</p>
+                        </td>
+                        <td>
+                          <strong>{i.testesResolvidos}</strong>
+                        </td>
+                        <td>
+                          <strong>{i.somaTotal}</strong>
+                        </td>
+                      </tr>
+                    ))}
                   </tbody>
                 </table>
               </div>
